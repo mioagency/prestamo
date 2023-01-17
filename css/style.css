@@ -1,0 +1,54 @@
+/*@font-face {
+    font-family: 'SF pro', sans-serif;
+    src: url(sansation_light.woff);
+  }*/
+
+  body {
+    background-color: #F5F5F7;
+  }
+
+  /*.btn-pagination {
+    list-style: none;
+  }
+
+  .btn-pagination a {
+    text-decoration: none;
+  }
+
+  .btn-pagination a {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #B4C3E6;
+    display: flex;
+    align-items: center;
+    color: #B4C3E6;
+  }
+
+  .btn-pagination a:hover {
+    background-color: #007BFF;
+    color: #fff;
+    border: 1px solid #007BFF;
+  }
+
+  .btn-pagination a.active {
+    background-color: #007BFF;
+    color: #fff;
+    border: 1px solid #007BFF;
+  }*/
+
+  /*=============================================
+MOVIL VERTICAL (revisamos en 320px)
+=============================================*/
+
+@media (max-width:575px){
+  #input-movil{
+    margin-top: 20px !important;
+  }
+
+  /*#btn-inicia {
+    margin-top: 20px !important;
+  }*/
+}
