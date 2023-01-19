@@ -30,36 +30,15 @@ opacity: 1;
     margin-bottom: 30px;
 }
 
-.cuartalinea{
-    margin-bottom: 50px;
-}
-.quintalinea {
-    margin-bottom: 35px;
-}
 .paddingcol1 {
     margin-right: 10px;
 }   
 
-.lb_saldo {
-color:#1da337;
-font-size: 32px;
-font-weight: 600 !important;
-}
 
 .lb_solisitud {
     font-size: 32px;  
     }
 
-.lb_por {
- display: flex;
- justify-content: end;
- margin-right: -23px !important;
-} 
-.lb_port {
-    display: flex;
-    justify-content: end;
-    margin-right: 1px !important;
-}
 
 .lb_padin {
     padding-top: 30px;
