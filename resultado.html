@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NCUS Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="navbar bg-primary">
+      <div class="container">
+        <a href="index.html" class="text-decoration-none"
+          ><span class="navbar-brand mb-0 h1 text-light"
+            >NCUS Web
+            <span class="fs-6 fw-light">Solicitudes en línea</span>
+          </span></a
+        >
+      </div>
+    </nav>
+
+    <!-- Columna de navegación de las paginas -->
+    <div class="container mt-80">
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <p>Aquí la navegación</p>
+        </div>
+
+        <!--Información resultados-->
+        <div class="col-12 col-lg-7">
+            <!--Mensaje de alerta-->
+            <div class="alert-container d-flex bg-yellow p-3 p-lg-4 br-10 yellow-border justify-content-center">
+                <span class="alert-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <g id="icon" transform="translate(-610 -158)">
+                      <circle id="Ellipse_14" data-name="Ellipse 14" cx="20" cy="20" r="20" transform="translate(610 158)" fill="#f0c200"/>
+                      <path id="Path_3222" data-name="Path 3222" d="M27.343,17.72h4.85l.475-12.812h-5.8Zm2.425,6.735c1.9,0,2.966-.923,2.966-2.57S31.666,19.3,29.768,19.3s-2.966.923-2.966,2.583S27.87,24.455,29.768,24.455Z" transform="translate(600.231 163.818)" fill="#fff"/>
+                    </g>
+                  </svg>
+                  </span>
+                <div class="alert-text mx-4">
+                    <p class="mb-0 font-weight-600">Lo sentimos, su solicitud no ha sido preaprobada.</p>
+                    <span class="font-weight-bold">Puede modificar su solicitud para ser considerada nuevamente.</span>
+                    <span class="separator yellow-separator my-3"></span>
+                    <p class="mb-0 font-weight-600 text-secondary">Razones:</p>
+                    <p class="text-secondary">Capacidad de pago no cumple con los requisitos mínimos para ser 
+                        aprobado.</p>
+                </div>
+            </div>
+            <!--FIN Mensaje de alerta-->
+
+            <!--Mensaje de oferta-->
+            <div class="bg-white p-3 py-lg-5 px-lg-4  br-10 gray-border mt-4">
+                <div class="offert-container d-flex mx-lg-4">
+                    <span class="offert-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                            <g id="Group_847" data-name="Group 847" transform="translate(-670 -309)">
+                            <circle id="Ellipse_9" data-name="Ellipse 9" cx="20" cy="20" r="20" transform="translate(670 309)" fill="#374659"/>
+                            <path id="Icon_awesome-hand-holding-usd" data-name="Icon awesome-hand-holding-usd" d="M9.308,5.214l1.807.517a.3.3,0,0,1-.083.6H9.846a.93.93,0,0,1-.372-.079.448.448,0,0,0-.509.072l-.632.632a.433.433,0,0,0,.054.665,2.64,2.64,0,0,0,1.149.416v.64a.58.58,0,0,0,.578.578h.578a.58.58,0,0,0,.578-.578V8.036A2.033,2.033,0,0,0,13.051,5.76,2.12,2.12,0,0,0,11.5,4.036L9.694,3.519a.3.3,0,0,1,.083-.6h1.185A.93.93,0,0,1,11.335,3a.448.448,0,0,0,.509-.072l.632-.632a.433.433,0,0,0-.054-.665,2.64,2.64,0,0,0-1.149-.416V.578A.58.58,0,0,0,10.7,0h-.578a.58.58,0,0,0-.578.578v.636A2.033,2.033,0,0,0,7.758,3.49,2.12,2.12,0,0,0,9.308,5.214Zm9.983,6.641a1.085,1.085,0,0,0-1.456,0l-3.151,2.67a2.1,2.1,0,0,1-1.366.506H9.283a.579.579,0,0,1,0-1.156h2.67a1.157,1.157,0,0,0,.058-2.312H6.551a3.863,3.863,0,0,0-2.526.95L2.439,13.875H.546A.564.564,0,0,0,0,14.453v3.469a.564.564,0,0,0,.546.578H12.719a2.116,2.116,0,0,0,1.366-.506l5.16-4.372a1.2,1.2,0,0,0,.047-1.767Z" transform="translate(680 319)" fill="#fff"/>
+                            </g>
+                        </svg>
+                    </span>
+                    <div class="offert-title-container mx-4">
+                        <h3 class="mb-0">Contraoferta de préstamo</h3>
+                        <p class="text-secondary">En base a su capacidad de pago, le ofrecemos esta contra oferta:</p>
+                    </div>
+                </div>
+                <div class="d-lg-flex bg-black-gray mx-lg-4 br-8 p-3 justify-content-between align-items-center my-4 offert-detail">
+                    <div class="offert my-2 border-right">
+                        <div class="offert-text">
+                            <p class="mb-0 mx-3 gray-text-color font-weight-500 fs-12">Cantidad de oferta</p>
+                            <p class="mb-0 mx-3 text-white mt-1 font-weight-500 fs-16">$1,000.00</p>
+                        </div>
+                    </div>
+                    <div class="offert my-2 border-right">
+                        <div class="offert-text">
+                            <p class="mb-0 mx-3 gray-text-color font-weight-500 fs-12">Cantidad de oferta</p>
+                            <p class="mb-0 mx-3 text-white mt-1 font-weight-500 fs-16">$1,000.00</p>
+                        </div>
+                    </div>
+                    <div class="offert my-2 border-right">
+                        <div class="offert-text">
+                            <p class="mb-0 mx-3 gray-text-color font-weight-500 fs-12">Cantidad de oferta</p>
+                            <p class="mb-0 mx-3 text-white mt-1 font-weight-500 fs-16">$1,000.00</p>
+                        </div>
+                    </div>
+                    <div class="offert my-2">
+                        <div class="offert-text">
+                            <p class="mb-0 mx-3 gray-text-color font-weight-500 fs-12">Cantidad de oferta</p>
+                            <p class="mb-0 mx-3 text-white mt-1 font-weight-500 fs-16">$1,000.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offert-text mx-lg-4">
+                    <p class="text-secondary">Para continuar con esta oferta, presione en el botón de “Aceptar contraoferta” y proceda a completar el proceso final de aprobación.</p>
+                </div>  
+            </div>
+            <!--FIN Mensaje de oferta-->
+        </div>
+    </div>
+  </body>
+</html>
