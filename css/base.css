@@ -1,0 +1,170 @@
+.frm_style_formidable-style.with_frm_style .frm_primary_label {
+  display: none;
+}
+
+.wprevpro_t1_site_logo {
+  display: none;
+}
+
+/*----------------------------------------------------------------------
+>>> TABLA DE CONTENIDO
+------------------------------------------------------------------------
+
+1.0 Estilos Base
+2.0 Forms
+3.0 Header
+    3.1 Navigation
+	3.2 Links
+    3.3 Menus
+4.0 Widgets
+5.0 Home Page
+	5.1
+    5.2
+6.0 Paginas
+	6.1 About Us
+	6.2 Contact Us
+7.0 Footer
+8.0 Media Queries
+    8.1 Desktop
+    8.2 Tablet
+    8.3 Movil
+------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+        1.0 ESTILOS BASE
+------------------------------------------------------------------------*/
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+/*-- TEXTO --*/
+
+/* .h1,.h2, .h3, .h4, .h5 {     ******* EJEMPLO *******
+    font-family: sans-serif;
+    font-weight: bold;
+} */
+/* .h1 {
+    font-size: 48px;
+}
+.h2 {
+    font-size: 36px;
+}
+.h3 {
+    font-size: 30px;
+} */
+
+.text-primary {
+  /* VEA QUE PRIMERO ESTA LA PALABRA TEXT-  */
+  color: green;
+}
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*-- COLORES --*/
+
+/* .primary {        COLOR PRIMARIO EJEMPLO
+    background-color: green;
+}
+.accent {           COLOR SECUNDARIO / ACENTO
+    background-color:yellow;
+} */
+
+/*-- BOTONES --*/
+
+/*-- UTILIDADES --*/
+
+.mt-80 {
+  /* Margin Top */
+  margin-top: 80px;
+}
+
+.main-table-container {
+  border-radius: 12px;
+  border: 2px solid #cdd6e1;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e5e9;
+}
+
+/**TITULOS SECCIONES**/
+
+/*----------------------------------------------------------------------
+        2.0 FORMS
+------------------------------------------------------------------------*/
+
+/* input[type=text] {         ******* EJEMPLO *******
+    font-size: 20px;
+    background: white;
+    border: none;
+} */
+
+/*----------------------------------------------------------------------
+        3.0 WIDGETS
+------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+        4.0 HEADER
+------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+        5.0 HOME PAGE
+------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+        6.0 PÁGINAS
+------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+        7.0 FOOTER
+------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------
+        8.0 ESTILOS CSS RESPONSIVE
+------------------------------------------------------------------------*/
+
+/*=============================================
+ESCRITORIO (XL revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width: 1200px) {
+}
+
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+=============================================*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+}
+
+/*=============================================
+MÓVIL HORIZONTAL (SM revisamos en 576px)
+=============================================*/
+
+@media (max-width: 767px) and (min-width: 576px) {
+}
+
+/*=============================================
+MOVIL VERTICAL (revisamos en 320px)
+=============================================*/
+
+@media (max-width: 575px) {
+}
