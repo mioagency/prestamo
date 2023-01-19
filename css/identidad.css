@@ -1,5 +1,9 @@
-
-
+.lb_img {
+    width: 35px;
+    padding: 8px;
+    background-color: #d3d5d4;
+    border-radius: 20px;
+}
 .lb_cabezera {
     font-size: 21px;
     color: #374659;
@@ -15,50 +19,11 @@ color: #374659;
 font-size: 20px;
 opacity: 1;
 }
-.lb_tamanosecundario {
-color:#888E94;
-font-size: 16px;
-}
 
-.lb_numero {
-    font-weight: 600;
-}
-.lb_numeros {
-    padding-top: 17px !important;
-}
-
-.lb_col {
-    padding-top: 9px;
-    padding-bottom: 9px;
-} 
-
-.lb_paddingg {
-    margin-bottom: -10px !important;
- }
-.lb_fff {
-    background-color:#fff;
-}
-.lb_d0d1d2 {
-    background-color: #f5f7fa;
-}
-.lb_borde {
-    border:2px solid #d0d1d2;
-}
-
-.primeralinea {
-    padding-bottom: 20px;
-    margin-bottom: 35px;
-    border-bottom:2px solid #ebedee;
-    border-radius:0; 
-}
 .lb_divisor {
-    border-bottom:2px solid #cccdd0;
+    border-bottom:3px solid #ededef;
     border-radius:0;
     margin-bottom: 30px;
-}
-.segundalinea,.terceralinea {
-    margin-bottom: 10px;
-
 }
 
 .cuartalinea{
