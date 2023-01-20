@@ -1,0 +1,62 @@
+.lb_header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+   
+   .lb_margentop {
+       margin-top: 78px;
+       margin-bottom: 78px;
+   }
+   
+   .lb_xtarjeta {
+       width:740px;
+   }
+   
+   .lb_yrellenohorizontal {
+       padding-top: 40px;
+       padding-bottom: 40px;
+   }
+   .lb_xrellenovertical {
+       padding-left: 57px;
+       padding-right: 57px;
+   }
+   
+   .lb_lineadivisor {
+       margin-top: 30px;
+       margin-bottom: 37px;
+   }
+   
+   .lb_cabezera {
+       font-size: 24px;
+       color: #374659;
+       font-weight: 600;
+   }
+   .lb_primernumero {
+       font-size:38;
+       color: #374659;
+       font-weight: 600;
+   }
+   
+   .lb_solisitud {
+       font-size: 40px;  
+    }
+   .lb_tamanosecundario {
+       color:#888E94;
+       font-size: 15px;
+       font-weight: 700;
+       }
+   
+   .lb_imginicial {
+           background-color: #D4DAE4;
+           border-radius: 30px;
+           padding: 5px;
+           width: 40px;
+       }
+   
+   @media (max-width:550px){
+   .lb_xrellenovertical {
+       padding-left: 20px;
+       padding-right: 20px;
+       }
+   }
+   
