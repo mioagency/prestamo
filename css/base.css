@@ -87,7 +87,7 @@ body {
 
 /*-- COLORES --*/
 .bg-gray {
-  background: #f5f7fa;
+  background: #f5f7fa !important;
 }
 
 /* .primary {        COLOR PRIMARIO EJEMPLO
