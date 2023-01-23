@@ -9,8 +9,9 @@
    }
    
    .lb_xtarjeta {
-       width:740px;
+       width:735px;
    }
+   
    
    .lb_yrellenohorizontal {
        padding-top: 40px;
@@ -20,7 +21,7 @@
        padding-left: 57px;
        padding-right: 57px;
    }
-   
+ 
    .lb_lineadivisor {
        margin-top: 30px;
        margin-bottom: 37px;
@@ -52,11 +53,40 @@
            padding: 5px;
            width: 40px;
        }
+
+    /* Formulario */
+
+    .lb_fonteformulario {
+        font-size: 16px;
+        color:#374659; 
+    }
+
+    .lb_background-color {
+        background-color: #E9ECEF;
+
+    }
+
+    .lb_xtarjetaformulario{
+        width: 732px;
+       }
+
+    .lb_xrellenoverticalformulario {
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+    /* ######  */
+   
    
    @media (max-width:550px){
    .lb_xrellenovertical {
        padding-left: 20px;
        padding-right: 20px;
        }
+    
+       .lb_xrellenoverticalformulario {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
    }
    
