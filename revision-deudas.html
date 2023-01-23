@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NCUS Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="navbar bg-primary">
+      <div class="container">
+        <a href="index.html" class="text-decoration-none"
+          ><span class="navbar-brand mb-0 h1 text-light"
+            >NCUS Web
+            <span class="fs-6 fw-light">Solicitudes en línea</span>
+          </span></a
+        >
+      </div>
+    </nav>
+
+    <!-- Columna de navegación de las paginas -->
+    <div class="container mt-80">
+      <div class="row">
+        <div class="col-12 col-lg-3 col-sm-12">
+          <p>Aquí la navegación</p>
+        </div>
+
+        <!--Tabla Información Deudas-->
+
+        <!-- <div
+          class="col-12 col-lg-9 bg-white p-4 p-lg-5 gray-border br-20 mx-sm-auto"
+        > -->
+        <div class="row col-lg-9 px-0">
+          <div class="mb-3">
+            <button type="button" class="btn btn-outline-secondary">
+              Términos
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+              Solicitante
+            </button>
+            <button type="button" class="btn btn-secondary">Deudas</button>
+          </div>
+          <div class="bg-white p-4 p-lg-5 gray-border br-20">
+            <div class="table-container table-responsive">
+              <!--Buscador-->
+              <div
+                class="table-header d-lg-flex justify-content-between align-items-center"
+              >
+                <div class="table-title"><h3>Deudas</h3></div>
+                <div class="table-search">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search..."
+                  />
+                </div>
+              </div>
+              <!--FIN Buscador-->
+
+              <!--Contenido tabla-->
+              <table class="table mt-lg-5">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Acreedor</th>
+                    <th scope="col">Número de Cuenta</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Pago</th>
+                    <th scope="col">Balance Actual</th>
+                    <th scope="col">Balance Original</th>
+                    <th scope="col">Saldar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>FIRSTBANK PR</td>
+                    <td>XXXXXXXXXXX5698</td>
+                    <td>Informe crédito</td>
+                    <td>$768.99</td>
+                    <td>$107, 090.98</td>
+                    <td>$122, 399.00</td>
+                    <td>
+                      <div class="check-container d-flex">
+                        <span class="ml-1">No</span>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
+                        <span>Si</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>FIRSTBANK PR</td>
+                    <td>XXXXXXXXXXX3323</td>
+                    <td>Informe crédito</td>
+                    <td>$58.77</td>
+                    <td>$755</td>
+                    <td>$3,800.00</td>
+                    <td>
+                      <div class="check-container d-flex">
+                        <span class="ml-1">No</span>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
+                        <span>Si</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--FIN Contenido tabla-->
+            </div>
+          <!--Paginación-->
+          <div
+            class="pagination-container d-lg-flex justify-content-between align-items-center mt-3 mt-lg-5"
+          >
+            <div class="number-pagination">
+              <p>1 al 2 de 2</p>
+            </div>
+            <div class="pagination">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">2 </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <span class="separator my-2"></span>
+          <button type="button" class="btn btn-primary mt-lg-5">
+            Continuar
+          </button>
+          <!--FIN Paginación-->
+        </div><div>
+        <!--FIN Tabla Información Deudas-->
+      </div>
+    </div>
+  </body>
+</html>
