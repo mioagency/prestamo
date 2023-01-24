@@ -84,14 +84,16 @@
                     <div class="mt-5 px-4">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label" style="color:#374659;">Cantidad del
-                                préstamo a
-                                solicitar</label>
-                            <input type="text" class="form-control border-1" placeholder="" aria-label="Number">
+                                préstamo a solicitar</label>
+                            <input type="number" class="form-control border-1" placeholder="" aria-label="Number">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label" style="color:#374659;">Ingreso
-                                anual neto (luego de deducciones)</label>
-                            <input type="range" class="form-range" id="customRange1">
+                            <div>
+                                <label for="exampleFormControlInput1" class="form-label" style="color:#374659;">Ingreso
+                                    anual neto (luego de deducciones)</label>
+                                <span id="ingresoNeto">$3000</span>
+                            </div>
+                            <input type="range" class="form-range" min="0" max="30000" step="250" id="customRange1">
                         </div>
 
                         <div class="my-4">
@@ -164,9 +166,9 @@
                                             style="color:#374659;">País</label>
                                         <select class="form-select border-1" aria-label="Default select example">
                                             <option selected></option>
-                                            <option value="1">Bayamón</option>
-                                            <option value="2">San Juan</option>
-                                            <option value="3">Canovanas</option>
+                                            <option value="1">Puerto Rico</option>
+                                            <option value="2">República Dominicana</option>
+                                            <option value="3">Estados Unidos (USA)</option>
                                         </select>
                                     </div>
                                 </div>
