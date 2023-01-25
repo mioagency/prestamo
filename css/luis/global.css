@@ -17,6 +17,14 @@
        padding-top: 40px;
        padding-bottom: 40px;
    }
+   .lb_xrellenoverticaldocumento{
+    margin-left: 30px;
+    margin-right: 10px;
+   }
+   .lb_yrellenohorizontaldocumento {
+    margin-top: 40px;
+    margin-bottom: 40px;
+   }
    .lb_xrellenovertical {
        padding-left: 57px;
        padding-right: 57px;
@@ -48,9 +56,8 @@
        }
    
    .lb_imginicial {
-           background-color: #D4DAE4;
            border-radius: 30px;
-           padding: 5px;
+           
            width: 40px;
        }
 
@@ -88,5 +95,13 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+    .lb_xrellenoverticaldocumento{
+        margin-left: 10px;
+        margin-right: 0px;
+       }
+       .lb_yrellenohorizontaldocumento {
+        margin-top: 30px;
+        margin-bottom: 30px;
+       }
    }
    
