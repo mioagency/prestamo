@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NCUS Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="bg-primary">
+      <div class="container-fluid d-lg-flex align-items-center justify-content-between p-0 sm-justify-content-center">
+          <div class="py-3 mx-2">
+            <a href="index.html" class="text-decoration-none">
+              <span class="navbar-brand mb-0 h1 text-light">NCUS Web <span class="fs-6 fw-light">Solicitudes en línea</span></span>
+            </a>
+          </div>
+          <div class="bg-dark-blue py-3 px-4">
+           <div class="login-menu d-flex justify-content-end justify-content-between align-items-center">
+            <div class="user"><span class="m-3"><svg xmlns="http://www.w3.org/2000/svg" width="13.48" height="14.978" viewBox="0 0 13.48 14.978">
+              <g id="Icon_feather-user" data-name="Icon feather-user" transform="translate(-5.25 -3.75)">
+                <path id="Path_3223" data-name="Path 3223" d="M17.98,27.192V25.628a3.064,3.064,0,0,0-3-3.128H9a3.064,3.064,0,0,0-3,3.128v1.564" transform="translate(0 -9.214)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                <path id="Path_3224" data-name="Path 3224" d="M18.256,7.628A3.128,3.128,0,1,1,15.128,4.5a3.128,3.128,0,0,1,3.128,3.128Z" transform="translate(-3.138)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+              </g>
+            </svg></span><a href="/" class="text-white text-decoration-none">MioTeam</a></div>
+            <div class="user-logout"><span class="m-3"><svg xmlns="http://www.w3.org/2000/svg" width="12.785" height="11.36" viewBox="0 0 12.785 11.36">
+              <g id="Group_856" data-name="Group 856" transform="translate(-1837.744 -14.239)">
+                <path id="Path_3225" data-name="Path 3225" d="M7863.071,6560.649h-6.688a.721.721,0,0,1,0-1.441h5.968v-8.478h-5.968a.721.721,0,0,1,0-1.441h6.688a.721.721,0,0,1,.721.721v9.919A.721.721,0,0,1,7863.071,6560.649Z" transform="translate(-6013.263 -6535.05)" fill="#fff"/>
+                <path id="Union_1" data-name="Union 1" d="M2.769,4.317.154,2.487a.36.36,0,0,1,0-.591L2.769.066a.36.36,0,0,1,.567.3V1.489H8.8a.721.721,0,0,1,0,1.442H3.335V4.022a.361.361,0,0,1-.361.361A.355.355,0,0,1,2.769,4.317Z" transform="translate(1837.744 17.709)" fill="#fff"/>
+              </g>
+            </svg></span><a href="/" class="text-white text-decoration-none">Salir</a></div>
+           </div>
+          </div>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Columna de navegación de las paginas -->
+    <div class="container mt-80">
+
+        <!--Tabla Información Deudas-->
+        <div class="col-12 col-lg-12 bg-white p-4 py-lg-5 gray-border br-20">
+        <div class="table-header d-lg-flex justify-content-between align-items-center">
+          <div class="table-header-title"><h5 class="font-weight-bold mb-lg-0 ">Solicitudes en línea</h5></div>
+          <div class="table-header-btn"><button type="button" class="btn btn-outline-primary">Crear nueva solicitud de préstamo</button></div>
+        </div>
+        <span class="separator my-4"></span>
+          <div class="table-container table-responsive">
+            <!--Buscador-->
+            <div class="search-filter d-flex justify-content-end my-2 mx-1">
+              <div class="col-lg-2 col-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search..."
+                />
+              </div>
+            </div>
+            <!--FIN Buscador-->
+
+            <!--Contenido tabla-->
+            <table class="table mt-lg-4">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Solicitud</th>
+                  <th scope="col">Estatus de solicitud</th>
+                  <th scope="col">Tipo de préstamo</th>
+                  <th scope="col">Propósito</th>
+                  <th scope="col">Cantidad solicitdad</th>
+                  <th scope="col">Plazos</th>
+                  <th scope="col">Tasa de interés</th>
+                  <th scope="col">Total del préstamo</th>
+                  <th scope="col">Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>EL000032</td>
+                  <td>En Proceso</td>
+                  <td>Préstamo personal</td>
+                  <td>Arreglos</td>
+                  <td>$30,000.00</td>
+                  <td>36</td>
+                  <td>1.000</td>
+                  <td>$30,137.90</td>
+                  <td>
+                    <div class="dropdown show">
+                      <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Seleccionar
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>EL000032</td>
+                  <td>En Proceso</td>
+                  <td>Préstamo personal</td>
+                  <td>Arreglos</td>
+                  <td>$30,000.00</td>
+                  <td>36</td>
+                  <td>1.000</td>
+                  <td>$30,137.90</td>
+                  <td>
+                    <div class="dropdown show">
+                      <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Seleccionar
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+            <!--FIN Contenido tabla-->
+          </div>
+          <!--Paginación-->
+          <div
+            class="pagination-container d-lg-flex justify-content-between align-items-center mt-3 mt-lg-4"
+          >
+            <div class="number-pagination">
+              <p>1 al 2 de 2</p>
+            </div>
+            <div class="pagination">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">2 </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--FIN Paginación-->
+        </div>
+        <!--FIN Tabla Información Deudas-->
+      </div>
+    </div>
+  </body>
+</html>

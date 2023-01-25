@@ -90,6 +90,10 @@ body {
   background: #f5f7fa !important;
 }
 
+.bg-dark-blue {
+  background: #2765b8;
+}
+
 /* .primary {        COLOR PRIMARIO EJEMPLO
     background-color: green;
 }
