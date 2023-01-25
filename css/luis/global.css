@@ -11,6 +11,16 @@
    .lb_xtarjeta {
        width:735px;
    }
+
+   /* Tarjeta documento */
+
+   .lb_xtarjetadocumento{
+    width: 1050px;
+   
+}
+
+/* ------------------- */
+
    
    
    .lb_yrellenohorizontal {
@@ -83,6 +93,16 @@
     }
 
     /* ######  */
+
+    @media (max-width:992px){
+          /* Tarjeta documento */
+      .lb_botondocumento {
+        margin-bottom: 10px;
+    }
+/*---------------*/
+
+    }
+    
    
    
    @media (max-width:550px){
@@ -103,5 +123,8 @@
         margin-top: 30px;
         margin-bottom: 30px;
        }
+
+       
+ 
    }
    
