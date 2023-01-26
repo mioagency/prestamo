@@ -8,8 +8,11 @@
 .lb_imagenm {
     margin-right: 0px !important;
 }
-.lb_cabezera {
-    margin-left: 10px;
+.lb_cabeze {
+    font-size: 24px;
+       color: #374659;
+       font-weight: 700;
+       opacity: 1;
 }
 .lb_primernumero {
     font-size:35;

@@ -15,6 +15,13 @@
     border-bottom:2px solid #cccdd0;
     border-radius:0;
     margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.lb_bordetarjetas1 {
+border-radius: 12px;
+border: #CDD6E1 2px solid;
 }
 .lb_divisorconfirmacion {
     border-bottom:2px solid #317FE8;
@@ -57,7 +64,9 @@
    .lb_cabezera {
        font-size: 24px;
        color: #374659;
-       font-weight: 600;
+       font-weight: 700;
+       opacity: 1;
+       
    }
    .lb_primernumero {
        font-size:38;

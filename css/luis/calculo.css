@@ -71,10 +71,13 @@ font-size: 16px;
     margin-right: 10px;
 }   
 
-.lb_saldo {
-color:#1da337;
-font-size: 32px;
-font-weight: 600 !important;
+.numeros1 {
+    font-size: 40px;
+    color:#1da337;
+    color:#1da337;
+    font-weight: 600;
+
+
 }
 
 .lb_solisitud {
@@ -144,8 +147,8 @@ font-weight: 600 !important;
     margin-top: 5px !important;
 }
 .lb_saldo {
-    font-size: 26px !important;
-    margin-top: 5px !important;
+    font-size: 26px;
+    margin-top: 5px;
 }
 .por {
     margin-right: -20px !important;
