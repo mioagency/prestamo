@@ -99,6 +99,10 @@
     .lb_xtarjetainiciarseccion {
         width: 450px;
     }
+    .lb_tamano {
+        width:106px;
+        
+           }
     .lb_xrellenoverticaliniciarseccion {
         margin-left: 20px;
         margin-right: 20px;
@@ -151,6 +155,9 @@
         margin-top: 30px;
         margin-bottom: 30px;
        }
+       .lb_tamano {
+        width: 100%;
+    }
 
        
  
