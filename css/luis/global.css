@@ -92,7 +92,30 @@
         margin-right: 26px;
     }
 
-    /* ######  */
+    /* 000000000000000000000  */
+
+    /* iniciar seccion */
+
+    .lb_xtarjetainiciarseccion {
+        width: 450px;
+    }
+    .lb_xrellenoverticaliniciarseccion {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .lb_img {
+        width: 37px;
+        padding: 10px;
+        background-color: #d3d5d4;
+        border-radius: 20px;
+    }
+
+
+
+
+
+
+    /* 00000000000000000000*/
 
     @media (max-width:992px){
           /* Tarjeta documento */
