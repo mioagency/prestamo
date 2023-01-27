@@ -40,6 +40,10 @@ body {
   background-color: #f8f8f8;
 }
 
+.full-height {
+  min-height: 100vh;
+}
+
 /*-- TEXTO --*/
 
 /* .h1,.h2, .h3, .h4, .h5 {     ******* EJEMPLO *******
@@ -128,6 +132,14 @@ body {
 
 .br-10 {
   border-radius: 10px;
+}
+
+.br-12 {
+  border-radius: 12px;
+}
+
+.bt-12 {
+  border-radius: 12px 12px 0px 0px;
 }
 
 .br-8 {
@@ -225,4 +237,9 @@ MOVIL VERTICAL (revisamos en 320px)
 =============================================*/
 
 @media (max-width: 575px) {
+  .full-height {
+    min-height: initial;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
