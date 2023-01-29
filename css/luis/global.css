@@ -3,6 +3,15 @@
     padding-bottom: 10px;
    }
 
+    .xx {
+        width:auto;
+        border: #f1f4f9 2px solid;
+    }
+
+    .yy {
+        border: #0509f5 2px solid;
+    }
+
   .lb_aguardando {
     border-left: #B4C3E6 3px solid;
    height: 70px;
@@ -218,7 +227,7 @@ border: #CDD6E1 2px solid;
 
     .lb_xtarjetainiciarseccion {
         width: 450px;
-        height: 460px;
+       
     }
 
     .lb_tamano {
