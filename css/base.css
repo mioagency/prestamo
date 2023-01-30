@@ -44,6 +44,19 @@ body {
   min-height: 100vh;
 }
 
+.px-80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.pl-80 {
+  padding-left: 80px;
+}
+
+.pr-80 {
+  padding-right: 80px;
+}
+
 /*-- TEXTO --*/
 
 /* .h1,.h2, .h3, .h4, .h5 {     ******* EJEMPLO *******
@@ -95,7 +108,7 @@ body {
 }
 
 .bg-dark-blue {
-  background: #2765b8;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /* .primary {        COLOR PRIMARIO EJEMPLO
@@ -241,5 +254,10 @@ MOVIL VERTICAL (revisamos en 320px)
     min-height: initial;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .px-sm-20px {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

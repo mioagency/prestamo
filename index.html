@@ -7,22 +7,29 @@
     <title>NCUS Web</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 
 <body>
     <!-- Header -->
-    <nav class="navbar bg-primary">
-        <div class="container">
-            <div class="container-fluid py-1">
-                <a href="index.html" class="text-decoration-none"><span class="navbar-brand mb-0 h1 text-light">NCUS Web
-                        <span class="fs-6 fw-light">Solicitudes
-                            en
-                            línea</span>
-                    </span></a>
+    <!--Top bar-->
+    <nav class="bg-primary top-bar">
+        <div class="container-fluid d-lg-flex align-items-center justify-content-between p-0 sm-justify-content-center">
+          <div class="logo-container pl-80 px-sm-20px">
+              <div class="py-3 mx-2">
+                <a href="index.html" class="text-decoration-none"><span class="navbar-brand mb-0 h1 text-light">NCUS Web <span class="fs-6 fw-light">Solicitudes en línea</span></span></a>
+              </div>
+          </div>  
+            <div class="login-container bg-dark-blue py-3 pr-80 px-sm-20px">
+             <div class="login-menu d-flex justify-content-center">
+              <div class="user"><span class="m-3"><img src="img/icon-user.svg" alt="" class="mb-0"></span><a href="/" class="text-white text-decoration-none">MioTeam</a></div>
+              <div class="user-logout"><span class="m-3"><img src="img/log-out_icon.svg" alt=""></span><a href="/" class="text-white text-decoration-none">Salir</a></div>
+             </div>
             </div>
         </div>
-    </nav>
+        </div>
+      </nav>
+      <!--FIN Top bar-->
 
     <!-- Columna de navegación de las paginas -->
     <div class="container">
@@ -52,7 +59,7 @@
 
                     <div class="col-sd-12 col-md-9 col-lg-9 col-xl-9 pe-lg-5 d-flex">
                         <div class="me-3">
-                            <img src="/img/login.svg" alt="Bootstrap" width="32" height="32">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"><g transform="translate(-651 -252)"><circle cx="19" cy="19" r="19" transform="translate(651 252)" fill="#d2dae5"/><path d="M14,14a4,4,0,1,0-4-4A4,4,0,0,0,14,14Zm0,2c-2.67,0-8,1.34-8,4v2H22V20C22,17.34,16.67,16,14,16Z" transform="translate(654 257)" fill="#374659"/><path d="M12.645,8.689a3.528,3.528,0,0,0-1.168.128C9.9,7.47,5.72,3.915,5.4,3.584a.63.63,0,0,0-.469-.209,1.042,1.042,0,0,0-.665.3c-.216.206-1.031,1.087-.875,1.25.469.481.594.578.787.775.291.3.884-.031,1.125.072a.461.461,0,0,1,.325.39,5.838,5.838,0,0,1-.094.74.781.781,0,0,0,.287.594.657.657,0,0,0,.487.272c.281.006.653-.4.95-.1s-.194.74-.156,1.062a1.18,1.18,0,0,0,.675.753c.191.041.681-.365.959-.3a.652.652,0,0,1,.344.356c.031.144-.216.781-.184.925a2.2,2.2,0,0,0,.325.544,3.518,3.518,0,0,0-.294,1.49,3.8,3.8,0,0,0,3.724,3.874A3.8,3.8,0,0,0,16.369,12.5,3.744,3.744,0,0,0,12.645,8.689Zm.725,5.682a1,1,0,1,1,1-1A1,1,0,0,1,13.37,14.371Z" transform="translate(675 257.85) rotate(45)" fill="#374659"/><path d="M4.933,3.375a1.042,1.042,0,0,0-.665.3c-.216.206-1.031,1.087-.875,1.25.469.481.594.578.787.775.248.254.718.051,1,.051a.32.32,0,0,1,.125.021.461.461,0,0,1,.325.39,5.836,5.836,0,0,1-.094.74.781.781,0,0,0,.287.594.657.657,0,0,0,.487.272c.2,0,.457-.209.694-.209a.344.344,0,0,1,.256.112c.3.3-.194.74-.156,1.062a1.18,1.18,0,0,0,.675.753c.177.038.612-.31.9-.31a.286.286,0,0,1,.063.007.652.652,0,0,1,.344.356c.031.144-.216.781-.184.925a2.2,2.2,0,0,0,.325.544,3.518,3.518,0,0,0-.294,1.49,3.8,3.8,0,0,0,3.724,3.874A3.8,3.8,0,0,0,16.369,12.5a3.744,3.744,0,0,0-3.724-3.808,3.528,3.528,0,0,0-1.168.128C9.9,7.47,5.72,3.915,5.4,3.584a.63.63,0,0,0-.469-.209m8.438,11a1,1,0,1,1,1-1,1,1,0,0,1-1,1M4.933,2.625a1.374,1.374,0,0,1,1.01.44c.3.309,4.271,3.69,5.729,4.932a5.7,5.7,0,0,1,.975-.058,4.412,4.412,0,0,1,3.167,1.325,4.634,4.634,0,0,1-3.161,7.856A4.556,4.556,0,0,1,8.178,12.5a4.343,4.343,0,0,1,.2-1.387,1.456,1.456,0,0,1-.218-.49,1.074,1.074,0,0,1,.009-.449,1.092,1.092,0,0,1-.365.067.893.893,0,0,1-.186-.019,1.865,1.865,0,0,1-1.264-1.4,1.105,1.105,0,0,1,.007-.3H6.3a1.391,1.391,0,0,1-1.024-.511,1.512,1.512,0,0,1-.488-1.113,2.015,2.015,0,0,1,.036-.336,2.123,2.123,0,0,1-.28.02,1.213,1.213,0,0,1-.9-.353c-.062-.063-.119-.117-.19-.185-.131-.125-.295-.28-.6-.591a.83.83,0,0,1-.232-.6,1.825,1.825,0,0,1,.546-1.08,8.224,8.224,0,0,1,.58-.636A1.813,1.813,0,0,1,4.933,2.625Zm8.438,11a.25.25,0,1,0-.25-.25A.25.25,0,0,0,13.37,13.621Z" transform="translate(675 257.85) rotate(45)" fill="#d4dae4"/></g></svg>
                         </div>
                         <div>
                             <p class="fw-semibold m-0">¿Tienes cuenta? Puedes iniciar sesión</p>
