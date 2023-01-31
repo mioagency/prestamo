@@ -22,97 +22,29 @@ display: none;
 
 }
 
-    .xx {
-        width:auto;
-        border: #f1f4f9 2px solid;
-    }
-
-    .yy {
-        border: #0509f5 2px solid;
-    }
-
-  .lb_aguardando {
-    border-left: #B4C3E6 3px solid;
-   height: 70px;
-  }
-  .lb_aprovado {
-    border-left:#317FE8 3px solid;
-    
-  }
-
-   lb_navegacionlinea {
-    border-left: #fff 3x solid;
    
-   }
-   .lb_ppaprovado {
-    
-    justify-content: center;
-    width:20px;
-    background-color: #317FE8;
-    border-radius:30px;
-    padding:1px;
-    font-size: 12px;
-    color: #fff;
-    margin-left: -12px;
-   }
-   .lb_ppaprovadoactivo {
-    
-    justify-content: center;
-    width:20px;
-    background-color: #0509f5;
-    border-radius:30px;
-    padding:1px;
-    font-size: 12px;
-    color: #fff;
-    margin-left: -12px;
-    Box-shadow:0px 0px 6px #656464;
 
-
-   }
 
 
    a {
     text-decoration: none;
    }
-   .lb_ppaprovadoactivofuente {
-    font-size: 20px;
-    color: #374659;
-    font-weight: 600;
-
-   }
-   .lb_ppaprovadodesactivadofuente {
-    font-size: 20px;
-    color:  #C7C7C7;
-    font-weight: 600;
-   }
-
-  
+ 
 
    .lb_ppaguardando {
-   
     justify-content: center;
-    width:20px;
+    width:22px;
     background-color: #fff;
     border-radius:30px;
     border: #B4C3E6 2px solid;
     padding:px;
     font-size: 12px;
     color: #B4C3E6;
-    margin-left: -12px;
+    margin-left: -13px;
    }
 
    .lb_ppaguardandofinallinea {
-    
-    justify-content: center;
-    width:20px;
-    background-color: #fff;
-    border-radius:30px;
-    border: #B4C3E6 2px solid;
-    padding:px;
-    font-size: 12px;
-    color: #B4C3E6;
-    margin-left: -8px;
-
+    margin-left: -10px;
    }
 
   
@@ -688,7 +620,7 @@ lb_margennumerosaguardando = Colocar clase para el indicador  sin texto arriba y
     }
 
 
-    }
+}
 
 
 @media (max-width:767px){

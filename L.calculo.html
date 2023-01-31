@@ -7,9 +7,8 @@
     <title>NCUS Web</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/luis/calculo.css" />
-    <link rel="stylesheet" type="text/css" href="css/luis/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/luis/global.css"/>
 </head>
 
 <body>
@@ -17,7 +16,7 @@
     <nav class="navbar bg-primary">
         <div class="container">
             <div class="container-fluid lb_header ,py-1">
-                <a href="index.html" class="text-decoration-none"><span class="navbar-brand mb-0 h1 text-light">NCUS Web
+                <a href="index.html" class="text-decoration-none"><span class="navbar-brand mb-0 h1 text-white">NCUS Web
                         <span class="fs-6 fw-light">Solicitudes
                             en
                             línea</span>
@@ -32,61 +31,59 @@
             <div class=" col-sd-12 col-md-12 col-lg-4 col-xl-4 lb_menuordenador">
                 <nav>
                     
-                        <div class="col lb_menudenavegacion lb_paguinas  " >
-                            <div class="col-lg-10 col-xl-10 col-md-11 col-sd-6 ,lb_paguinas  " >
+                    <div class="col lb_menudenavegacion lb_paguinas  " >
+                        <div class="col-lg-10 col-xl-10 col-md-11 col-sd-6 ,lb_paguinas position-relative" >
 
-
-
-
-                                <div class="pb-3 lb_aprovado ">
-                                    <a href="file:///C:/Users/boyer/Prestamo/L.confirmacion.html">
-                                    <div class="row mb-3 lb_ppaprovado ">1</div></a>
-                                    <div class=" lb_mm mb-3"><div class="lb_ppaprovadodesactivadofuente">Información</div>
+                            <div class="pb-3 lb_aprovado ">
+                                <a href="file:///C:/Users/boyer/Prestamo/L.confirmacion.html">
+                                    <div class="row mb-3 lb_ppaprovado ">1</div>
+                                </a>
+                                <div class=" lb_mm mb-3">
+                                    <div class="lb_ppaprovadodesactivadofuente">Información</div>
                                 </div>
+                            </div>
+
+                            <div class="pb-5 lb_aprovado " >
+                                <a href="#">
+                                    <div class="mb-3 row lb_ppaprovado  lb_ppaprovadoactivo ">2</div>
+                                </a>
+                                <div class=" lb_mm">
+                                    <div class="lb_ppaprovadoactivofuente mb-2 ">Cálculo</div>
+                                    <div class="">Se calcula el monto solicitado,la tasa de interés y el plazo mensual. Con esto obtendrá la cantidad total a pagar del préstamo y lacantidad a pagar mensual.</div>
                                 </div>
+                            </div>
 
-
-
-
-                                <div class="pb-3 lb_aprovado " >
-                                    <a href="#">
-                                    <div class="mb-3 row lb_ppaprovado  lb_ppaprovadoactivo ">2</div></a>
-                                    <div class=" lb_mm  " ><div class="lb_ppaprovadoactivofuente mb-2 ">Cálculo</div>
-                                    <div class="" style="color: #888E94;">Se calcula el monto solicitado,la tasa de interés y el plazo mensual. Con esto obtendrá la cantidad total a pagar del préstamo y lacantidad a pagar mensual.</div>
-                                        
+                            <div class="pb-3 lb_aguardando">
+                                <a href="#">
+                                    <div class="row mb-3 lb_ppaguardando ">3</div>
+                                </a>
+                                <div class=" lb_mm mb-3">
+                                    <div class="lb_ppaprovadodesactivadofuente">Identidad</div>
                                 </div>
+                            </div>
+
+
+                            <div class="pb-3 lb_aguardando">
+                                <a href="#">
+                                    <div class="row mb-3 lb_ppaguardando">4</div>
+                                </a>
+                                <div class=" lb_mm mb-3">
+                                    <div class="lb_ppaprovadodesactivadofuente">Deudas</div>
                                 </div>
-
-
-                                <div class="pb-3 lb_aguardando">
-                                    <a href="#">
-                                    <div class="row mb-3 lb_ppaguardando ">3</div></a>
-                                    <div class=" lb_mm mb-3"><div class="lb_ppaprovadodesactivadofuente">Identidad</div>
+                            </div>
+                            
+                            <div class=" mb-5">
+                                <a href="#">
+                                    <div class="row mb-0 lb_ppaguardando lb_ppaguardandofinallinea">5</div>
+                                </a>
+                                <div class="lb_pppp mb-5">
+                                    <div class="lb_ppaprovadodesactivadofuente">Resultado</div>
                                 </div>
-                                </div>
-
-
-                                <div class="pb-3 lb_aguardando">
-                                    <a href="#">
-                                    <div class="row mb-3 lb_ppaguardando ">4</div></a>
-                                    <div class=" lb_mm mb-3"><div class="lb_ppaprovadodesactivadofuente">Deudas</div>
-                                </div>
-                                </div>
-
-
-
-                                
-                                <div class=" mb-5">
-                                    <a href="#">
-                                    <div class="row mb-0 ,lb_ppaguardando lb_ppaguardandofinallinea">5</div></a>
-                                    <div class="lb_pppp ,mb-5"><div class="lb_ppaprovadodesactivadofuente">Resultado</div>
-                                       
+                            </div>
+                        </div>
+                    </div>
                                     
-
-                          
                 </nav>
-            
-           
             </div>
 
 
@@ -225,7 +222,7 @@
 
 
                                                                                                  
-</nav>
+    </nav>
 
 
 </div>
@@ -254,20 +251,23 @@
                               
                     <div class=" ">
         
-                        <div class=".row lb_row ">
+                        <div class="row lb_row ">
                             <div class="col">
                                 <div class="row align-items-center lb_fff primeralinea">   
                                     <div class="col-sm-1 col-lg-1 col-12">
                                         <img src="img/icon-oferta.svg"/>
-                                            </div>
-                                                 <div class="col lb_col">
-                                                    <div class="row-4 lb_padding lb_p lb_tamanosecundario">Tipo de préstamo:</div>
-                                                        <div class="row-12"><div class="lb_cabezera">PRÉSTAMO PERSONAL</div>     
-                                                </div>
+                                    </div>
+                                    <div class="col lb_col">
+                                        <div class="row-4 lb_padding lb_p lb_tamanosecundario">Tipo de préstamo:
+                                        </div>
+                                        <div class="row-12">
+                                            <div class="lb_cabezera">PRÉSTAMO PERSONAL</div>    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <hr class="divider mb-32">
                         <div class="row lb_row lb_d0d1d2 segundalinea rounded-2">
                             <div class="col-4 lb_col  ">
                                     <div class="row-4 lb_paddingg lb_p lb_tamanosecundario">Cantidad solicitada</div>
@@ -307,17 +307,14 @@
                 
                             <div class="row lb_row rounded-2 border border-2 lb_borde quintalinea">
                                <div class="col lb_col">
-                                <div class="row-12 lb_paddingg lb_p lb_tamanosecundario">Total del préstamo a pagar</div>
-                                <div class="row-12 ,lb_saldo numeros1">$3,013.75</div>
-                            </div> 
+                                    <div class="row-12 lb_paddingg lb_p lb_tamanosecundario">Total del préstamo a pagar</div>
+                                    <div class="row-12 ,lb_saldo numeros1">$3,013.75</div>
+                                </div> 
                             </div>          
-                        <div class="row ,lb_row lb_divisor ,mb-4"></div> 
-                       
+                            <hr class="divider mb-40"> 
 
-                          <div class="row terceralinea">                   
-                        
+                        <div class="row terceralinea">                   
                             <div class="col-sm-12 col-md-3  ">
-                          
                                 <div class="row">
                                     <a href="#" class="btn btn-outline-primary btn-sm lb_tamano py-2 mb-2">Regresar</a>
                                 </div>
@@ -328,7 +325,7 @@
                                 </div>
                             </div> 
                         </div> 
-                      </div>               
+                    </div>               
             </div>
         </div>
     </div>
