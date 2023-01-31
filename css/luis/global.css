@@ -7,14 +7,15 @@
 /* 0000000000000000000000000000000               Menu   ordenador          000000000000000000000000000*/
 
 
-.lb_menuordenador {
-
+.lb_ppaprovadoactivofuente2 {
+    
+        color:#888E94;
+        font-size: 16px;
+        
 
 }
 
-
-
-/* 0000000000000000000000000000000               Menu   tablet          000000000000000000000000000*/
+/* 000000000000000000000000000000             Menu   tablet          000000000000000000000000000*/
 
 
 .lb_menutablet {
@@ -524,6 +525,7 @@ justify-content: center;
     padding:1px;
     font-size: 12px;
     color: #fff;
+    margin-top: -3px;
     Box-shadow:0px 0px 6px #656464;
   
    }
@@ -604,7 +606,7 @@ justify-content: center;
     font-size: 12px;
     color: #B4C3E6;
     margin-left: 90%;
-    margin-top: 30px;
+    margin-top: 27px;
    }
 
    .lb_margennumeros {
@@ -613,7 +615,7 @@ margin-top: -2px;
    }
 
  .lb_margennumerosaguardando {
-    margin-top: 28px;
+    margin-top: 27px;
     
        }
 
