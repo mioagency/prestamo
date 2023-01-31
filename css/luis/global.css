@@ -328,11 +328,17 @@ border: #CDD6E1 2px solid;
 
     /* 00000000000000000000*/
 
+/* 000000000000000000000000000000000000000000000      Tarjeta calculo      0000000000000000000000000*/
 
 
 
 
 
+
+
+
+
+/* 000000000000000000000000000000000000000000000      -      000000000000000000000000000000000000000*/
 
 
     @media (max-width:992px){
@@ -486,7 +492,7 @@ border: #CDD6E1 2px solid;
 .lb_menutablet {
     
     display: inline;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     
 } 
 
