@@ -175,6 +175,10 @@ body {
   border: 2px solid #cdd6e1;
 }
 
+.light-border-right {
+  border-right: 2px solid #e2e5e9;
+}
+
 .separator {
   display: block;
   width: 100%;
