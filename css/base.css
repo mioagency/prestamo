@@ -167,6 +167,10 @@ body {
   margin-top: 80px;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .gray-border {
   border: 2px solid #cdd6e1;
 }
@@ -179,6 +183,14 @@ body {
 }
 .yellow-separator {
   background-color: #e9c442;
+}
+
+.text-light-gray {
+  color: #888e94;
+}
+
+.text-dark-gray {
+  color: #374659;
 }
 
 /**TITULOS SECCIONES**/
