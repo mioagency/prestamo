@@ -4,6 +4,37 @@
    }
 
 
+/* 0000000000000000000000000000000               Boton        000000000000000000000000000*/
+
+.btn-primary {
+    background-color: #0d6efd;
+    color: #fff;
+    border-color: #0d6efd ;
+   
+}
+
+:hover.btn-primary { 
+    color: #fff;
+    background-color:#0b5ed7
+    
+}
+
+.btn-outline-primary {
+background: transparent;
+color: #0d6efd;
+border-color: #0d6efd ;
+}
+
+:hover.btn-outline-primary { 
+    color: #fff;
+    background-color:#0b5ed7
+    
+}
+
+
+
+
+
 /* 0000000000000000000000000000000               Menu   ordenador          000000000000000000000000000*/
 
 
@@ -296,10 +327,7 @@
     .lb_colorprincipal {
         font-size: 17px;
     }
-    @media (min-width:767px){
-    
-    
-    }
+   
     }
     
     @media (max-width:500px){
