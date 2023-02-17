@@ -13,26 +13,48 @@
 1.0 Estilos Base
 2.0 Forms
 3.0 Header
-    3.1 Navigation
+  3.1 Navigation
 	3.2 Links
-    3.3 Menus
-4.0 Widgets
-5.0 Home Page
-	5.1
-    5.2
-6.0 Paginas
-	6.1 About Us
-	6.2 Contact Us
-7.0 Footer
-8.0 Media Queries
-    8.1 Desktop
-    8.2 Tablet
-    8.3 Movil
+  3.3 Menus
+4.0 Paginas
+  4.1 Pagina de inicio
+5.0 Media Queries
+  8.1 Desktop
+  8.2 Tablet
+  8.3 Movil
 ------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------
         1.0 ESTILOS BASE
 ------------------------------------------------------------------------*/
+:root {
+  /* Tamaños font */
+  --body-size: 16px;
+  --font-size-14: 14px;
+  --font-size-12: 12px;
+  --frm-title-24: 24px;
+
+  /* Pesos font */
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+
+  /* Colores */
+  --custom-primary: #007bff;
+
+  --custom-success: #19ba19;
+  --custom-warning: #e9c442;
+  --custom-danger: #f03800;
+  --custom-info: #4189e8;
+
+  --frm-labeltext-color: #374659;
+  --frm-field-text-color: #868d96;
+  --frm-header-paragraph: #878e95;
+  --menu-txt-no-activo: #c7c7c7;
+  --menu-txt-activo: #888e94;
+
+  --gray-border: #cdd6e1;
+  --light-gray: #f5f5f7;
+}
 
 body {
   padding: 0;
@@ -44,85 +66,85 @@ body {
   min-height: 100vh;
 }
 
-.px-80 {
-  padding-left: 80px;
-  padding-right: 80px;
+hr {
+  border-top: 1px solid;
+  opacity: 1;
 }
 
-.pl-80 {
-  padding-left: 80px;
-}
-
-.pr-80 {
-  padding-right: 80px;
+a {
+  text-decoration: none;
 }
 
 /*-- TEXTO --*/
-
-/* .h1,.h2, .h3, .h4, .h5 {     ******* EJEMPLO *******
-    font-family: sans-serif;
-    font-weight: bold;
-} */
-/* .h1 {
-    font-size: 48px;
-}
-.h2 {
-    font-size: 36px;
-}
-.h3 {
-    font-size: 30px;
-} */
-.offert-detail:last-child {
-}
 .fs-12 {
-  font-size: 12px;
+  font-size: var(--font-size-12);
+}
+
+.fs-14 {
+  font-size: var(--font-size-14);
 }
 
 .fs-16 {
-  font-size: 16px;
+  font-size: var(--body-size);
+}
+
+.fs-24 {
+  font-size: var(--frm-title-24);
 }
 
 .font-weight-500 {
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
 }
 
 .font-weight-600 {
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
 }
 
 .text-primary {
   /* VEA QUE PRIMERO ESTA LA PALABRA TEXT-  */
   color: green;
 }
+
 .text-white {
   color: white;
+}
+.text-light {
+  color: #99a0a8 !important;
+}
+.text-light-gray {
+  color: #888e94;
+}
+
+.text-dark-gray {
+  color: #374659;
 }
 
 .text-center {
   text-align: center;
 }
 
+.texto-terminos {
+  font-size: 14px;
+  color: var(--bs-gray-600);
+}
+
 /*-- COLORES --*/
+.field-text-color {
+  color: var(--frm-field-text-color);
+}
+
+.bg-gray-header {
+  background: var(--frm-gray-header);
+}
+
 .bg-gray {
   background: #f5f7fa !important;
 }
 
-.bg-dark-blue {
-  background: rgba(0, 0, 0, 0.2);
+.bg-darken {
+  background: rgb(0 0 0 / 20%);
 }
 
-/* .primary {        COLOR PRIMARIO EJEMPLO
-    background-color: green;
-}
-.accent {           COLOR SECUNDARIO / ACENTO
-    background-color:yellow;
-} */
-
-/*-- BOTONES --*/
-
-/*-- UTILIDADES --*/
-
-/*COLORS*/
 .bg-yellow {
   background-color: #fff9e6;
 }
@@ -135,16 +157,47 @@ body {
   color: #e2e5e9;
 }
 
+.gray-frm-paragraph {
+  color: var(--frm-header-paragraph);
+}
+
 .yellow-border {
   border: 2px solid #f0c200;
 }
 
+.gray-border {
+  border: 2px solid var(--gray-border);
+}
+
+.light-border-right {
+  border-right: 2px solid #e2e5e9;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e5e9;
+}
+.yellow-separator {
+  background-color: #e9c442;
+}
+
+.custom-bg-primary {
+  background: var(--custom-primary) !important;
+}
+
+/*-- UTILIDADES --*/
 .br-20 {
   border-radius: 20px;
 }
 
 .br-10 {
   border-radius: 10px;
+}
+
+.bt-10 {
+  border-radius: 10px 10px 0 0;
 }
 
 .br-12 {
@@ -163,22 +216,96 @@ body {
   border-right: 1px solid #657488;
 }
 
+/* MARGINS */
 .mt-80 {
   margin-top: 80px;
 }
 
-.gray-border {
-  border: 2px solid #cdd6e1;
+.mt-56 {
+  margin-top: 56px;
 }
 
-.separator {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #e2e5e9;
+.mt-48 {
+  margin-top: 48px;
 }
-.yellow-separator {
-  background-color: #e9c442;
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-56 {
+  margin-bottom: 56px;
+}
+
+.my-24 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.my-40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.my-48 {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.my-56 {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+
+/* PADDINGS */
+.px-76 {
+  padding-left: 76px;
+  padding-right: 76px;
+}
+
+.px-56 {
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.py-56 {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.pl-80 {
+  padding-left: 80px;
+}
+
+.pr-80 {
+  padding-right: 80px;
 }
 
 /**TITULOS SECCIONES**/
@@ -186,35 +313,114 @@ body {
 /*----------------------------------------------------------------------
         2.0 FORMS
 ------------------------------------------------------------------------*/
+.form-card {
+  background: #fff;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
 
-/* input[type=text] {         ******* EJEMPLO *******
-    font-size: 20px;
-    background: white;
-    border: none;
-} */
+.form-login-row {
+  background: var(--light-gray);
+}
+
+.form-label {
+  color: var(--frm-labeltext-color);
+}
+
+.divider {
+  color: #e2e5e9;
+}
+
+/*FORMULARIO PA INDEX*/
+.form-container__icon-box {
+  width: 70%;
+}
+
+.form-container__btn {
+  width: 30%;
+}
+
+.form-container__icon-title {
+  margin-left: 20px;
+}
+/*FIN FORMULARIO PA INDEX*/
 
 /*----------------------------------------------------------------------
-        3.0 WIDGETS
+        3.0 HEADER & NAVEGACION
+------------------------------------------------------------------------*/
+.nav-menu {
+  max-width: 400px;
+  }
+  .nav-menu__item {
+  display: flex;
+  align-items: flex-start;
+  }
+  .nav-menu__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background: white;
+  color: #B4C3E6;
+  border: solid 2px #B4C3E6;
+  border-radius: 32px;
+  position: relative;
+  z-index: 1;
+  }
+  .nav-menu__item--active .nav-menu__number {
+  color: white;
+  background: var(--custom-primary);
+  border-color: white;
+  box-shadow: 0px 0px 0px 2px var(--custom-primary);
+  }
+  .nav-menu__item--completed .nav-menu__number {
+  color: white;
+  background: var(--custom-primary);  
+  border-color:var(--custom-primary);           
+  }
+  .nav-menu__item--completed .nav-menu__content {
+  border-color: var(--custom-primary);
+  }
+  .nav-menu__content {
+  padding: 0 24px;
+  margin-left: -16px;
+  border-left: 2px solid #B4C3E6;
+  padding-bottom: 40px;
+  }
+  .nav-menu__item:last-child .nav-menu__content {
+  border-left: none;
+  }
+  .nav-menu__item--active .nav-menu__content,
+  .nav-menu__item:last-child .nav-menu__item--active .nav-menu__content { /*Se trae de regreso el borde del :last-child porque se necesita para cuando está activa esta página en la nav*/
+  border-left: 2px solid var(--custom-primary);
+  }
+
+  .nav-menu__title {
+  font-size: 20px;
+  font-weight: 500;
+  color:#C7C7C7;
+  }
+  .nav-menu__item--active .nav-menu__title {
+  color: #374659;
+  }
+  .nav-menu__description {
+  font-weight: 300;
+  margin-top: 8px;
+  display: none;
+  }
+
+  .nav-menu__item--active .nav-menu__description {
+  color:#888E94;
+  display: block;
+  }
+
+
+/*----------------------------------------------------------------------
+        4.0 PÁGINAS
 ------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------
-        4.0 HEADER
-------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------
-        5.0 HOME PAGE
-------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------
-        6.0 PÁGINAS
-------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------
-        7.0 FOOTER
-------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------
-        8.0 ESTILOS CSS RESPONSIVE
+        5.0 ESTILOS CSS RESPONSIVE
 ------------------------------------------------------------------------*/
 
 /*=============================================
@@ -235,29 +441,130 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
 TABLET VERTICAL (MD revisamos en 768px)
 =============================================*/
 
-@media (max-width: 991px) and (min-width: 768px) {
+
+/*=============================================
+TABLET VERTICAL (revisamos en 991px)
+=============================================*/ 
+@media only screen and (max-width: 991px) {
+  .nav-menu {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom:24px;
+  }
+  .nav-menu__item {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      overflow: visible;
+      padding:0 8px;
+      max-width: 64px;
+  }
+  .nav-menu__item::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #B4C3E6;
+      position: absolute;
+      top: 76%;
+      left: 32px;
+  }
+  .nav-menu__item--active::after {
+      width: 40px;
+      background: var(--custom-primary);
+      left: 40px;
+  }
+  .nav-menu__item--completed::after {
+      background: var(--custom-primary);
+  }
+  .nav-menu__item:last-child::after,
+  .nav-menu__title {
+      display: none;
+  }
+  .nav-menu__title {
+      font-size: 16px;
+      font-weight: 500;
+  }
+  .nav-menu__item--active .nav-menu__title {
+      display: block;
+  }
+  .nav-menu__content {
+      margin-left: 0;
+      padding: 0 0 12px;
+  }
+  .nav-menu__description,
+  .nav-menu__item--active .nav-menu__content .nav-menu__description {
+      display: none;
+  }
+  .nav-menu__content,
+  .nav-menu__item--active .nav-menu__content {
+      border-left: none;
+  }
+  
 }
 
 /*=============================================
 MÓVIL HORIZONTAL (SM revisamos en 576px)
 =============================================*/
 
-@media (max-width: 767px) and (min-width: 576px) {
-}
+@media (max-width: 576px) {
+  /* PADDINGS */
+  .px-sm-26 {
+    padding-left: 26px !important;
+    padding-right: 26px !important;
+  }
 
+  .py-sm-26 {
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
+  }
+
+  .p-sm-26 {
+    padding: 26px !important;
+  }
+
+  /* MARGINS */
+  .mb-sm-20 {
+    margin-bottom: 20px !important;
+  }
+
+  .mt-sm-26 {
+    margin-top: 26px !important;
+  }
+
+  .mb-sm-26 {
+    margin-bottom: 26px !important;
+  }
+
+  .my-sm-26 {
+    margin-top: 26px !important;
+    margin-bottom: 26px !important;
+  }
+
+  .mb-sm-40 {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  /*FORMULARIO PA INDEX*/
+  .form-container__icon-box {
+    width: 100%;
+  }
+
+  .form-container__btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .form-container__btn button {
+    width: 100%;
+  }
+}
 /*=============================================
-MOVIL VERTICAL (revisamos en 320px)
+MOVIL VERTICAL (revisamos en 575px)
 =============================================*/
 
 @media (max-width: 575px) {
-  .full-height {
-    min-height: initial;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .px-sm-20px {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
