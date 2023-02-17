@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <title>NCUS Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <!--Top bar-->
+    <nav class="custom-bg-primary top-bar">
+      <div
+        class="container-fluid d-lg-flex align-items-center justify-content-between p-0 sm-justify-content-center"
+      >
+        <div class="logo-container pl-80 px-sm-20px">
+          <div class="py-3 mx-2">
+            <a href="PA-index.html" class="text-decoration-none">
+              <span class="navbar-brand mb-0 h1 text-white">NCUS Web</span>
+              <span class="fs-6 fw-light text-white">Solicitudes en línea</span>
+            </a>
+          </div>
+        </div>
+        <div class="login-container bg-darken py-3 pr-80 px-sm-26">
+          <div class="login-menu d-flex justify-content-center">
+            <div class="user">
+              <span class="m-3"
+                ><img src="img/icon-user.svg" alt="" class="mb-0" /></span
+              ><a href="/" class="text-white text-decoration-none">MioTeam</a>
+            </div>
+            <div class="user-logout">
+              <span class="m-3"><img src="img/log-out_icon.svg" alt="" /></span
+              ><a href="/" class="text-white text-decoration-none">Salir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--FIN Top bar-->
+    <!--Main Container-->
+    <div class="container-fluid px-76 px-sm-26 my-80 mb-sm-40">
+      <div class="row">
+        <!--Navegación izquierda-->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3">
+
+          <!-- ======= NAVEGACIÓN =========== -->
+          <nav class="nav-menu">
+            <!--Página 1-->
+            <div class="nav-menu__item nav-menu__item--completed"> 
+                <a href="#">
+                    <div class="nav-menu__number">1</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Información</a>
+                    <p class="nav-menu__description">Asegúrese de llenar todos los campos y de seguir cualquier otra instrucción especificada en el formulario. Una vez que haya completado el formulario, acepte los términos y condiciones y continúe al próximo paso donde se mostrará el cálculo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 2-->
+            <div class="nav-menu__item nav-menu__item--completed"> 
+                <a href="#">
+                    <div class="nav-menu__number">2</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Cálculo</a>
+                    <p class="nav-menu__description">Se calcula el monto solicitado,la tasa de interés y el plazo mensual. Con esto obtendrá la cantidad total a pagar del préstamo y lacantidad a pagar mensual.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 3-->
+            <div class="nav-menu__item nav-menu__item--completed"> 
+                <a href="#">
+                    <div class="nav-menu__number">3</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Identidad</a>
+                    <p class="nav-menu__description">Asegúrese de llenar todos los campos y de seguir cualquier otra instrucción especificada en el formulario. Una vez que haya completado el formulario, acepte los términos y condiciones y continúe al próximo paso donde se mostrará el cálculo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 4-->
+            <div class="nav-menu__item nav-menu__item--active"> 
+                <a href="#">
+                    <div class="nav-menu__number">4</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Deudas</a>
+                    <p class="nav-menu__description">Seleccione todas las deudas que desee consolidar con la cantidad de préstamo solicitada. Luego continúe con el resultado de su preaprobación de préstamo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 5-->
+            <div class="nav-menu__item">
+                <a href="#">
+                    <div class="nav-menu__number">5</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Resultado</a>
+                    <p class="nav-menu__description">Obtendrá el resultado de su preaprobación según la información proveída. De ser preaprobado puede continuar con la aprobación final. De no ser preaprobado, puede modificar su solicitud o aceptar una contraoferta.
+                    </p>
+                </div>
+            </div>
+          </nav>
+          <!-- Termina la navegación Desktop -->
+
+        </div>
+        <!--FIN Navegación izquierda-->
+
+        <!--Contenido formulario derecha-->
+        <div class="col-12 col-md-12 col-lg-8 col-xl-9">
+          <div class="form-container br-10 gray-border bg-white">
+            <!--Hero-->
+            <div class="form-container__header mt-56 mt-sm-26 px-56 px-sm-26">
+              <!--search-->
+              <div class="search-filter d-flex justify-content-end">
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                  <input
+                    type="text"
+                    class="form-control field-text-color"
+                    placeholder="Search..."
+                  />
+                </div>
+              </div>
+              <!--FIN search-->
+            </div>
+            <!--FIN Hero-->
+
+            <!--Tabla PA-deudas-->
+            <div class="table-container table-responsive px-56 px-sm-26">
+              <!--Contenido tabla-->
+              <table class="table mt-24">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Acreedor</th>
+                    <th scope="col">Número de Cuenta</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Pago</th>
+                    <th scope="col">Balance Actual</th>
+                    <th scope="col">Balance Original</th>
+                    <th scope="col">Saldar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>FIRSTBANK PR</td>
+                    <td>XXXXXXXXXXX5698</td>
+                    <td>Informe crédito</td>
+                    <td>$768.99</td>
+                    <td>$107, 090.98</td>
+                    <td>$122, 399.00</td>
+                    <td>
+                      <div class="check-container d-flex">
+                        <span class="ml-1">No</span>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
+                        <span>Si</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>FIRSTBANK PR</td>
+                    <td>XXXXXXXXXXX3323</td>
+                    <td>Informe crédito</td>
+                    <td>$58.77</td>
+                    <td>$755</td>
+                    <td>$3,800.00</td>
+                    <td>
+                      <div class="check-container d-flex">
+                        <span class="ml-1">No</span>
+                        <div class="form-check form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
+                        <span>Si</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--FIN Contenido tabla-->
+            </div>
+            <!--FIN Tabla PA-deudas-->
+
+            <!--Paginación-->
+            <div
+              class="pagination-container d-md-flex d-lg-flex d-xl-flex justify-content-between align-items-center px-56 px-sm-26 mt-48"
+            >
+              <div class="number-pagination">
+                <p>1 al 2 de 2</p>
+              </div>
+              <div class="pagination">
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">2 </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Siguiente</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="separator-container px-56 px-sm-26">
+              <div class="separator"></div>
+            </div>
+            <!--Boton-->
+            <div class="btn-container px-56 px-sm-26 mb-56 mb-sm-26">
+              <button type="button" class="btn btn-primary mt-lg-5">
+                Obtener resultado de preaprobación
+              </button>
+            </div>
+            <!--FIN Boton-->
+            <!--FIN Paginación-->
+          </div>
+        </div>
+        <!--FIN Contenido formulario derecha-->
+      </div>
+    </div>
+    <!--FIN Main Container-->
+  </body>
+</html>
