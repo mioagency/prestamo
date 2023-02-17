@@ -1,405 +1,385 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NCUS Web</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="css/luis/global.css" />
-    <link rel="stylesheet" href="css/base.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <!--Top bar-->
-    <nav class="bg-primary top-bar">
-        <div class="container-fluid d-lg-flex align-items-center justify-content-between p-0 sm-justify-content-center">
-          <div class="logo-container pl-80 px-sm-20px">
-              <div class="py-3 mx-2">
-                <a href="index.html" class="text-decoration-none"><span class="navbar-brand mb-0 h1 text-light">NCUS Web <span class="fs-6 fw-light">Solicitudes en línea</span></span></a>
+    <nav class="custom-bg-primary top-bar">
+      <div
+        class="container-fluid d-lg-flex align-items-center justify-content-between p-0 sm-justify-content-center"
+      >
+        <div class="logo-container pl-80 px-sm-20px">
+          <div class="py-3 mx-2">
+            <a href="PA-index.html" class="text-decoration-none">
+              <span class="navbar-brand mb-0 h1 text-white">NCUS Web</span>
+              <span class="fs-6 fw-light text-white">Solicitudes en línea</span>
+            </a>
+          </div>
+        </div>
+        <div class="login-container bg-darken py-3 pr-80 px-sm-20px">
+          <div class="login-menu d-flex justify-content-center">
+            <div class="user">
+              <span class="m-3"
+                ><img src="img/icon-user.svg" alt="" class="mb-0" /></span
+              ><a href="/" class="text-white text-decoration-none">MioTeam</a>
+            </div>
+            <div class="user-logout">
+              <span class="m-3"><img src="img/log-out_icon.svg" alt="" /></span
+              ><a href="/" class="text-white text-decoration-none">Salir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--FIN Top bar-->
+
+    <!--Main Container-->
+    <div class="container-fluid px-76 px-sm-26 my-80 mb-sm-40">
+      <div class="row">
+
+        <!--Navegación izquierda-->
+        <div class="col-12 col-md-12 col-lg-4 col-sm-12">
+
+          <!-- ======= NAVEGACIÓN =========== -->
+          <nav class="nav-menu">
+            <!--Página 1-->
+            <div class="nav-menu__item nav-menu__item--active"> 
+                <a href="#">
+                    <div class="nav-menu__number">1</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Información</a>
+                    <p class="nav-menu__description">Asegúrese de llenar todos los campos y de seguir cualquier otra instrucción especificada en el formulario. Una vez que haya completado el formulario, acepte los términos y condiciones y continúe al próximo paso donde se mostrará el cálculo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 2-->
+            <div class="nav-menu__item"> 
+                <a href="#">
+                    <div class="nav-menu__number">2</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Cálculo</a>
+                    <p class="nav-menu__description">Se calcula el monto solicitado,la tasa de interés y el plazo mensual. Con esto obtendrá la cantidad total a pagar del préstamo y lacantidad a pagar mensual.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 3-->
+            <div class="nav-menu__item"> 
+                <a href="#">
+                    <div class="nav-menu__number">3</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Identidad</a>
+                    <p class="nav-menu__description">Asegúrese de llenar todos los campos y de seguir cualquier otra instrucción especificada en el formulario. Una vez que haya completado el formulario, acepte los términos y condiciones y continúe al próximo paso donde se mostrará el cálculo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 4-->
+            <div class="nav-menu__item"> 
+                <a href="#">
+                    <div class="nav-menu__number">4</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Deudas</a>
+                    <p class="nav-menu__description">Seleccione todas las deudas que desee consolidar con la cantidad de préstamo solicitada. Luego continúe con el resultado de su preaprobación de préstamo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 5-->
+            <div class="nav-menu__item">
+                <a href="#">
+                    <div class="nav-menu__number">5</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Resultado</a>
+                    <p class="nav-menu__description">Obtendrá el resultado de su preaprobación según la información proveída. De ser preaprobado puede continuar con la aprobación final. De no ser preaprobado, puede modificar su solicitud o aceptar una contraoferta.
+                    </p>
+                </div>
+            </div>
+          </nav>
+          <!-- Termina la navegación Desktop -->
+          
+        </div>
+        <!--FIN Navegación izquierda-->
+
+        <!--Contenido formulario derecha-->
+        <div class="col-12 col-md-12 col-lg-8 col-xl-5">
+          <div class="form-container br-10 gray-border bg-white">
+            <!--Hero-->
+            <div
+              class="form-container__header form-login-row px-56 px-sm-26 py-24 bt-10 d-lg-flex d-md-flex"
+            >
+              <!--icono-->
+              <div
+                class="form-container__icon-box d-flex d-lg-flex d-md-flex align-items-md-start"
+              >
+                <img src="img/account_icon.svg" alt="" />
+                <div class="form-container__icon-title">
+                  <h2 class="fs-16">¿Tienes cuenta? Puedes iniciar sesión</h2>
+                  <p class="fs-14 m-0 gray-frm-paragraph">
+                    Para acceder a su cuenta, presione Inicia Sesión e ingrese
+                    su email y contraseña.
+                  </p>
+                </div>
               </div>
-          </div>  
-            <div class="login-container bg-dark-blue py-3 pr-80 px-sm-20px">
-             <div class="login-menu d-flex justify-content-center">
-              <div class="user"><span class="m-3"><img src="img/icon-user.svg" alt="" class="mb-0"></span><a href="/" class="text-white text-decoration-none">MioTeam</a></div>
-              <div class="user-logout"><span class="m-3"><img src="img/log-out_icon.svg" alt=""></span><a href="/" class="text-white text-decoration-none">Salir</a></div>
-             </div>
+              <!--FIN icono-->
+
+              <!--boton-->
+              <div
+                class="form-container__btn d-lg-flex d-xl-flex d-md-flex mt-sm-2 justify-content-end align-items-end"
+              >
+                <button type="button" class="btn btn-outline-primary">
+                  Inicia Sesión
+                </button>
+              </div>
+              <!--FIN boton-->
             </div>
-        </div>
-        </div>
-      </nav>
-      <!--FIN Top bar-->
+            <!--FIN Hero-->
 
-    <!-- Columna de navegación de las paginas -->
-    <div class="container">
-        <div class="row my-5 mx-1">
-            <div class=" col-sd-12 col-md-12 col-lg-4 col-xl-4 lb_menuordenador">
-                <nav>
-                    
-                        <div class="col lb_menudenavegacion lb_paguinas  " >
-                            <div class="col-lg-10 col-xl-10 col-md-11 col-sd-6 ,lb_paguinas  " >
-  
-  
-  
-  
-  
-                                <div class="pb-3 lb_aprovado" >
-                                    <a href="#">
-                                    <div class="mb-3 row lb_ppaprovado  lb_ppaprovadoactivo ">2</div></a>
-                                    <div class=" lb_mm  " ><div class="lb_ppaprovadoactivofuente mb-2 ">Información</div>
-                                    <div class="lb_ppaprovadoactivofuente2 ">Asegúrese de llenar todos los campos y de seguir cualquier otra instrucción especificada en el formulario. Una vez que haya completado el formulario, acepte los términos y condiciones y continúe al próximo paso donde se mostrará el cálculo.</div>
-                                        
-                                </div>
-                                </div>
-  
-  
-  
-                                
-                                
-                                <div class="pb-3 lb_aguardando">
-                                    <a href="#">
-                                    <div class="row mb-3 lb_ppaguardando ">4</div></a>
-                                    <div class=" lb_mm mb-3"><div class="lb_ppaprovadodesactivadofuente">Cálculo</div>
-                                </div>
-                                </div>
-  
-  
-  
-                                
-                                <div class="pb-3 lb_aguardando">
-                                    <a href="#">
-                                    <div class="row mb-3 lb_ppaguardando ">4</div></a>
-                                    <div class=" lb_mm mb-3"><div class="lb_ppaprovadodesactivadofuente">Identidad</div>
-                                </div>
-                                </div>
-
-
-
-                            
-                                <div class="pb-3 lb_aguardando">
-                                    <a href="#">
-                                    <div class="row mb-3 lb_ppaguardando ">4</div></a>
-                                    <div class=" lb_mm mb-3"><div class="lb_ppaprovadodesactivadofuente">Deudas</div>
-                                </div>
-                                </div>
-
-  
-  
-  
-  
-  
-  
-                                <div class=" mb-5">
-                                    <a href="#">
-                                    <div class="row ,mb-5 lb_ppaguardando">13</div></a>
-                                    <div class="lb_pppp ,mb-5"><div class="lb_ppaprovadodesactivadofuente">Resultado</div>
-                                       
-                                    </div>
-
-                                </div>
-                                </div>
-  
-  
-  
-  
-                                       
-  
-                                                                                                                 
-                </nav>
-            
-           
+            <!--Iniciar sección texto-->
+            <div class="form-container__register form-login-row px-56 px-sm-26">
+              <div class="separator"></div>
+              <h3 class="py-24 fs-16">
+                <u class="gray-frm-paragraph"
+                  ><a href="#" class="gray-frm-paragraph font-we"
+                    >Puedes registrarte aquí si no tienes cuenta</a
+                  ></u
+                >
+              </h3>
             </div>
+            <!--FIN Iniciar sección texto-->
 
+            <!--Formulario PA-index-->
+            <form action="" class="px-56 px-sm-26 my-56">
+              <div class="mb-20">
+                <label for="cantidad" class="form-label"
+                  >Cantidad del préstamo a solicitar</label
+                >
+                <input
+                  type="number"
+                  class="form-control border-1"
+                  placeholder=""
+                  aria-label="Number"
+                  id="cantidad"
+                />
+              </div>
 
+              <div>
+                <label for="ingresoAnual" class="form-label"
+                  >Ingreso anual neto (luego de deducciones)</label
+                >
+                <input
+                  type="number"
+                  class="form-control border-1"
+                  placeholder=""
+                  aria-label="Number"
+                  id="ingresoAnual"
+                />
+              </div>
 
+              <div class="separator my-40"></div>
 
+              <div class="mb-20">
+                <label for="tiempoEmpleo" class="form-label"
+                  >Tiempo en empleo actual</label
+                >
+                <select
+                  class="form-select border border-1"
+                  aria-label="Default select example"
+                  id="tiempoEmpleo"
+                >
+                  <option selected></option>
+                  <option value="2">5 años o más</option>
+                  <option value="3">Two</option>
+                  <option value="4">Three</option>
+                </select>
+              </div>
 
-            <div class="col columna2 lb_menutablet ">
-    
-                <nav>
-                    <div class=",row lb_menutablet1  py-5 px-5 " >
-                        <div class="row ,px-0 lb_menutablet2 " >
-                
-                            
-                            <div class="col px-0 ,lb_p3 lb_aprovadot" >
+              <div class="row mb-20">
+                <div class="col-12 col-md-6 mb-sm-20">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input
+                    type=" text"
+                    class="form-control border-1"
+                    placeholder=""
+                    aria-label="Nombre"
+                    id="nombre"
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="apellidos" class="form-label">Apellidos</label>
+                  <input
+                    type=" text"
+                    class="form-control border-1"
+                    id="apellidos"
+                  />
+                </div>
+              </div>
 
-                                <div class=",pb-3 ,lb_aprovado">
-                                    <a href="#">
-                                        <div class="lb_mmm ,mb-3"><div class="lb_ppaprovadoactivofuente lb_margentextoaguardando  py-3 ">Información</div>
-                                    <div class="row ,mb-3 lb_activotablet ">1</div></a>
-                                   
-                                </div>
-                                </div>
-            
-                            </div>
-                           
-            
-                            
-                            <div class="col px-0 ,lb_p3 lb_aguardandot" >
-            
-                                <div class=",pb-3 ,lb_aprovado">
-                                    <a href="#">
-                                        <div class="lb_mmm ,mb-3"><div class="lb_ppaprovadodesactivadofuente lb_margentextoaguardando  py-3" ></div>
-                                    <div class="row ,mb-3 lb_aguardandotablet lb_margennumerosaguardando">2</div></a>
-                                   
-                                </div>
-                                </div>
-            
-                            </div>
-            
-            
-                            <div class="col px-0 ,lb_p3 lb_aguardandot" >
-            
-                                <div class=",pb-3 ,lb_aprovado">
-                                    <a href="#">
-                                        <div class="lb_mmm ,mb-3"><div class="lb_ppaprovadodesactivadofuente lb_margentextoaguardando  py-3" ></div>
-                                    <div class="row ,mb-3 lb_aguardandotablet lb_margennumerosaguardando">3</div></a>
-                                   
-                                </div>
-                                </div>
-            
-                            </div>
-            
-                            <div class="col px-0 ,lb_p3 lb_aguardandot "   >
-            
-                                <div class=",pb-3 ,lb_aprovado ">
-                                    <a href="#">
-                                        <div class=" lb_mmm ,mb-3 "><div class=" lb_ppaprovadodesactivadofuente lb_margentextoaguardando py-3" ></div>
-                                    <div class="row ,mb-3 lb_aguardandotablet lb_margennumerosaguardando ">4</div></a></div>
-            
-                                        <div class="">
-                                    <div class=",row lb_ppaprovadodesactivadofuente lb_textnumero5 py-3"></div>
-                                    <div class=",row  lb_numero5aguardandosin ">5</div>
-                                </div>
-                                </div>
-                                </div>
-                            
-                        
-            
-                            </div>
-                        
-                    
-            
-                            
-            
-            
-            
-                                                                                                             
-            </nav>
-            
-            
-            </div>
-                                   
+              <div>
+                <label for="seguroSocial" class="form-label"
+                  >Seguro Social</label
+                >
+                <input
+                  type="text"
+                  class="form-control border-1"
+                  id="seguroSocial"
+                />
+              </div>
 
+              <div class="separator my-40"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Inico y Header del formulario -->
-            <div class="col-sd-12 col-md-12 col-lg-6 col-xl-6 rounded-4 shadow-sm border border-2"
-                style=background-color:#fff;>
-                <div class="row px-4 py-4 rounded-top-4" style="background-color: #F5F5F7;">
-
-                    <div class="col-sd-12 col-md-9 col-lg-9 col-xl-9 pe-lg-5 d-flex">
-                        <div class="me-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"><g transform="translate(-651 -252)"><circle cx="19" cy="19" r="19" transform="translate(651 252)" fill="#d2dae5"/><path d="M14,14a4,4,0,1,0-4-4A4,4,0,0,0,14,14Zm0,2c-2.67,0-8,1.34-8,4v2H22V20C22,17.34,16.67,16,14,16Z" transform="translate(654 257)" fill="#374659"/><path d="M12.645,8.689a3.528,3.528,0,0,0-1.168.128C9.9,7.47,5.72,3.915,5.4,3.584a.63.63,0,0,0-.469-.209,1.042,1.042,0,0,0-.665.3c-.216.206-1.031,1.087-.875,1.25.469.481.594.578.787.775.291.3.884-.031,1.125.072a.461.461,0,0,1,.325.39,5.838,5.838,0,0,1-.094.74.781.781,0,0,0,.287.594.657.657,0,0,0,.487.272c.281.006.653-.4.95-.1s-.194.74-.156,1.062a1.18,1.18,0,0,0,.675.753c.191.041.681-.365.959-.3a.652.652,0,0,1,.344.356c.031.144-.216.781-.184.925a2.2,2.2,0,0,0,.325.544,3.518,3.518,0,0,0-.294,1.49,3.8,3.8,0,0,0,3.724,3.874A3.8,3.8,0,0,0,16.369,12.5,3.744,3.744,0,0,0,12.645,8.689Zm.725,5.682a1,1,0,1,1,1-1A1,1,0,0,1,13.37,14.371Z" transform="translate(675 257.85) rotate(45)" fill="#374659"/><path d="M4.933,3.375a1.042,1.042,0,0,0-.665.3c-.216.206-1.031,1.087-.875,1.25.469.481.594.578.787.775.248.254.718.051,1,.051a.32.32,0,0,1,.125.021.461.461,0,0,1,.325.39,5.836,5.836,0,0,1-.094.74.781.781,0,0,0,.287.594.657.657,0,0,0,.487.272c.2,0,.457-.209.694-.209a.344.344,0,0,1,.256.112c.3.3-.194.74-.156,1.062a1.18,1.18,0,0,0,.675.753c.177.038.612-.31.9-.31a.286.286,0,0,1,.063.007.652.652,0,0,1,.344.356c.031.144-.216.781-.184.925a2.2,2.2,0,0,0,.325.544,3.518,3.518,0,0,0-.294,1.49,3.8,3.8,0,0,0,3.724,3.874A3.8,3.8,0,0,0,16.369,12.5a3.744,3.744,0,0,0-3.724-3.808,3.528,3.528,0,0,0-1.168.128C9.9,7.47,5.72,3.915,5.4,3.584a.63.63,0,0,0-.469-.209m8.438,11a1,1,0,1,1,1-1,1,1,0,0,1-1,1M4.933,2.625a1.374,1.374,0,0,1,1.01.44c.3.309,4.271,3.69,5.729,4.932a5.7,5.7,0,0,1,.975-.058,4.412,4.412,0,0,1,3.167,1.325,4.634,4.634,0,0,1-3.161,7.856A4.556,4.556,0,0,1,8.178,12.5a4.343,4.343,0,0,1,.2-1.387,1.456,1.456,0,0,1-.218-.49,1.074,1.074,0,0,1,.009-.449,1.092,1.092,0,0,1-.365.067.893.893,0,0,1-.186-.019,1.865,1.865,0,0,1-1.264-1.4,1.105,1.105,0,0,1,.007-.3H6.3a1.391,1.391,0,0,1-1.024-.511,1.512,1.512,0,0,1-.488-1.113,2.015,2.015,0,0,1,.036-.336,2.123,2.123,0,0,1-.28.02,1.213,1.213,0,0,1-.9-.353c-.062-.063-.119-.117-.19-.185-.131-.125-.295-.28-.6-.591a.83.83,0,0,1-.232-.6,1.825,1.825,0,0,1,.546-1.08,8.224,8.224,0,0,1,.58-.636A1.813,1.813,0,0,1,4.933,2.625Zm8.438,11a.25.25,0,1,0-.25-.25A.25.25,0,0,0,13.37,13.621Z" transform="translate(675 257.85) rotate(45)" fill="#d4dae4"/></g></svg>
-                        </div>
-                        <div>
-                            <p class="fw-semibold m-0">¿Tienes cuenta? Puedes iniciar sesión</p>
-                            <p class="m-0" style="font-size: 14px;">Para acceder a su cuenta, presione Inicia Sesión e
-                                ingrese su email
-                                y contraseña.</p>
-                        </div>
-                    </div>
-                    <div class="col-sd-12 col-md-3 col-lg-3 col-xl-3 d-grid align-content-center" id="btn-inicia">
-                        <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-outline-primary btn-sm ">Inicia Sesión</a>
-                        </div>
-                    </div>
-
-                    <div class="my-4">
-                        <hr class="my-0" style="color: #E2E5E9;">
-                    </div>
-
-                    <div>
-                        <div>
-                            <a class="link-secondary" href="#" style="font-size: 16px;">Puedes registrarte aquí
-                                si no tienes cuenta</a>
-                        </div>
-                    </div>
+              <div class="mb-20">
+                <span class="fw-semibold">Dirección Postal</span>
+                <div class="my-3">
+                  <label for="linea1" class="form-label">Línea 1</label>
+                  <input
+                    type="text"
+                    class="form-control border-1"
+                    placeholder=""
+                    aria-label="Dirección 1"
+                    id="linea1"
+                  />
+                </div>
+                <div class="mb-20">
+                  <label for="linea2" class="form-label">Línea 2</label>
+                  <input
+                    type="text"
+                    class="form-control border-1"
+                    placeholder=""
+                    aria-label="Dirección 2"
+                    id="linea2"
+                  />
                 </div>
 
-                <!-- Formulario -->
-                <form action="">
-                    <div class="mt-5 px-4">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label" style="color:#374659;">Cantidad del
-                                préstamo a
-                                solicitar</label>
-                            <input type="text" class="form-control border-1" placeholder="" aria-label="Number">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label" style="color:#374659;">Ingreso
-                                anual neto (luego de deducciones)</label>
-                            <input type="range" class="form-range" id="customRange1">
-                        </div>
+                <div class="row mb-20">
+                  <div class="col-12 col-md-6 mb-sm-20">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input
+                      type=" text"
+                      class="form-control border-1"
+                      placeholder=""
+                      aria-label="Ciudad"
+                      id="ciudad"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="pais" class="form-label">País</label>
+                    <select
+                      class="form-select border-1"
+                      aria-label="Default select example"
+                      id="pais"
+                    >
+                      <option selected></option>
+                      <option value="1">Bayamón</option>
+                      <option value="2">San Juan</option>
+                      <option value="3">Canovanas</option>
+                    </select>
+                  </div>
+                </div>
 
-                        <div class="my-4">
-                            <hr class="my-0" style="color: #E2E5E9;">
-                        </div>
+                <div class="row">
+                  <label for="codigoPostal" class="form-label"
+                    >Código postal</label
+                  >
+                  <div class="col-12 col-md-6 mb-sm-20">
+                    <input
+                      type=" text"
+                      class="form-control border-1"
+                      placeholder=""
+                      aria-label="código postal"
+                      id="codigoPostal"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <input
+                      type=" text"
+                      class="form-control border-1"
+                      placeholder=""
+                      aria-label="código postal"
+                    />
+                  </div>
+                </div>
 
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label" style="color:#374659;">Tiempo en
-                                empleo
-                                actual</label>
-                            <select class=" form-select border border-1" aria-label="Default select example">
-                                <option selected></option>
-                                <option value="2">5 años o más</option>
-                                <option value="3">Two</option>
-                                <option value="4">Three</option>
-                            </select>
-                        </div>
+                <div class="separator my-40"></div>
 
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label for="exampleFormControlInput1" class="form-label"
-                                    style="color:#374659;">Nombre</label>
-                                <input type=" text" class="form-control border-1" placeholder="" aria-label="Nombre">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12" id="input-movil">
-                                <label for="exampleFormControlInput1" class="form-label"
-                                    style="color:#374659;">Apellidos</label>
-                                <input type=" text" class="form-control border-1 " placeholder=""
-                                    aria-label="Apellidos">
-                            </div>
+                <!-- Terminos y condiciones -->
 
+                <div class="form-check mb-20">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    required
+                  />
+                  <label
+                    class="form-check-label fw-semibold form-label"
+                    for="flexCheckDefault"
+                  >
+                    Acepto los términos y condiciones<span class="text-danger"
+                      >*</span
+                    >
+                  </label>
+                </div>
 
-                            <div class="mt-3">
-                                <label for="exampleFormControlInput1" class="form-label" style="color:#374659;">Seguro
-                                    Social</label>
-                                <input type="password" class="form-control border-1" id="inputPassword3" name="password"
-                                    value="" aria-describedby="passwordHelpBlock">
-                            </div>
+                <div class="mb-40">
+                  <p class="texto-terminos">
+                    Autorizo a la institución a obtener mi informe de crédito
+                    para propósitos de pre aprobación. Entiendo que esta
+                    búsqueda no se vera reflejada en mi crédito y, por lo tanto,
+                    no ocasionará impacto en mi empírica. El informe de crédito
+                    será utilizado únicamente para propósitos de realizar la pre
+                    cualificación de esta solicitud de préstamo. Entiendo que
+                    luego de someter la solicitud pre aprobada y continuar el
+                    proceso del préstamo, la institución debe obtener mi informe
+                    de crédito de forma tal que se refleje la indagación para
+                    futuras búsquedas e impactando la puntuación de la empírica.
+                    Entiendo y acepto se me solicite información personal
+                    durante el proceso de la solicitud. La información personal
+                    que me solicitaran es y no se limita a, seguro social,
+                    nombre, apellidos, fecha de nacimiento, dirección.
+                    Adicional, entiendo y acepto que deberé enviar copia de
+                    documentos solicitados tales como, identificación, factura
+                    de utilidades, talonarios de empleo. Acepto estos términos y
+                    me comprometo a completar la solicitud en la mejor de mis
+                    facultades, completando los datos únicamente con mi
+                    información personal.
+                  </p>
+                </div>
 
-                            <div class="my-4">
-                                <hr class="my-0" style="color: #E2E5E9;">
-                            </div>
-
-                            <div>
-                                <span class="fw-semibold">Dirección Postal</span>
-                                <div class="my-3">
-                                    <label for="exampleFormControlInput1" class="form-label"
-                                        style="color:#374659;">Línea
-                                        1</label>
-                                    <input type="text" class="form-control border-1" placeholder=""
-                                        aria-label="Dirección 1">
-                                </div>
-                                <div class="my-3">
-                                    <label for="exampleFormControlInput1" class="form-label"
-                                        style="color:#374659;">Línea
-                                        2</label>
-                                    <input type="text" class="form-control border-1" placeholder=""
-                                        aria-label="Dirección 2">
-                                </div>
-
-                                <div class="row mb-3">
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <label for="exampleFormControlInput1" class="form-label"
-                                            style="color:#374659;">Ciudad</label>
-                                        <input type=" text" class="form-control border-1" placeholder=""
-                                            aria-label="Ciudad">
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12" id="input-movil">
-                                        <label for="exampleFormControlInput1" class="form-label "
-                                            style="color:#374659;">País</label>
-                                        <select class="form-select border-1" aria-label="Default select example">
-                                            <option selected></option>
-                                            <option value="1">Bayamón</option>
-                                            <option value="2">San Juan</option>
-                                            <option value="3">Canovanas</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <label for="exampleFormControlInput1" class="form-label fw-semibold mb-2"
-                                        style="color:#374659;">Código
-                                        postal</label>
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <input type=" text" class="form-control border-1" placeholder=""
-                                            aria-label="código postal">
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12" id="input-movil">
-                                        <input type=" text" class="form-control border-1" placeholder=""
-                                            aria-label="código postal">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="my-4">
-                                <hr class="my-0" style="color: #E2E5E9;">
-                            </div>
-
-                            <!-- Terminos y condiciones -->
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label fw-semibold" for="flexCheckDefault"
-                                    style="color:#374659;">
-                                    Acepto los términos y condiciones<span class="text-danger">*</span>
-                                </label>
-                            </div>
-
-                            <div class="mt-2">
-                                <p style="color:#99A0A8; font-size: 14px;">Autorizo a la institución a obtener mi
-                                    informe de
-                                    crédito para propósitos de pre aprobación.
-                                    Entiendo que esta búsqueda no se vera reflejada en mi crédito y, por lo tanto, no
-                                    ocasionará impacto en mi empírica. El informe de crédito será utilizado únicamente
-                                    para
-                                    propósitos
-                                    de realizar la pre cualificación de esta solicitud de préstamo. Entiendo que luego
-                                    de
-                                    someter la solicitud pre aprobada y continuar el proceso del préstamo, la
-                                    institución
-                                    debe
-                                    obtener mi informe de crédito de forma tal que se refleje la indagación para futuras
-                                    búsquedas e
-                                    impactando la puntuación de la empírica. Entiendo y acepto se me solicite
-                                    información
-                                    personal durante el proceso de la solicitud. La información personal que me
-                                    solicitaran
-                                    es y no se limita a, seguro social, nombre, apellidos, fecha de nacimiento,
-                                    dirección.
-                                    Adicional, entiendo y acepto que deberé enviar copia de documentos solicitados tales
-                                    como,
-                                    identificación, factura de utilidades, talonarios de empleo. Acepto estos términos y
-                                    me
-                                    comprometo a completar la solicitud en la mejor de mis facultades, completando los
-                                    datos
-                                    únicamente con mi información personal.</p>
-                            </div>
-
-                            <div class=" d-grid gap-2 justify-content-md-start pb-4 pt-2">
-                                <a href="#" class="btn btn-primary btn-sm">Continuar</a>
-                            </div>
-
-                        </div>
-                </form>
-            </div>
-
-            <div class="col-sd-12 col-md-12 col-lg-3 col-xl-3"></div>
+                <div class="d-grid gap-2 justify-content-md-start pb-4 pt-2">
+                  <button type="button" class="btn btn-primary">
+                    Continuar
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!--FIN Formulario PA-index-->
+          </div>
         </div>
+        <!--FIN Contenido formulario derecha-->
+      </div>
     </div>
-</body>
-
+    <!--FIN Main Container-->
+  </body>
 </html>
