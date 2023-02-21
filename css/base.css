@@ -7,7 +7,7 @@
 }
 
 /*----------------------------------------------------------------------
->>> TABLA DE CONTENIDO
+>>> TABLA DE CONTENIDO - base.CSS
 ------------------------------------------------------------------------
 
 1.0 Estilos Base
@@ -32,11 +32,16 @@
   --body-size: 16px;
   --font-size-14: 14px;
   --font-size-12: 12px;
+  --frm-title-: 1.5rem;
+  --frm-title-20: 20px;
   --frm-title-24: 24px;
+  --label-number-: 3rem;
+  --frm-title-40: 40px;
 
   /* Pesos font */
   --font-weight-500: 500;
   --font-weight-600: 600;
+  --font-weight-700: 700;
 
   /* Colores */
   --custom-primary: #007bff;
@@ -49,11 +54,19 @@
   --frm-labeltext-color: #374659;
   --frm-field-text-color: #868d96;
   --frm-header-paragraph: #878e95;
+  --frm-box-titles: #f5f7fa;
+  --frm-box-pragraph: #8c9196;
   --menu-txt-no-activo: #c7c7c7;
   --menu-txt-activo: #888e94;
 
   --gray-border: #cdd6e1;
   --light-gray: #f5f5f7;
+  --light-gray-boxes: #f5f7fa;
+  --white-backgorund: #fff;
+
+  --tab-menu-gray: #ced4da;
+  --label-backgorund: #F5F7FA;
+  --divider-line: #E2E5E9;
 }
 
 body {
@@ -88,10 +101,16 @@ a {
   font-size: var(--body-size);
 }
 
+.fs-20 {
+  font-size: var(--frm-title-20);
+}
 .fs-24 {
   font-size: var(--frm-title-24);
 }
 
+.fs-40 {
+  font-size: var(--frm-title-40);
+}
 .font-weight-500 {
   font-weight: var(--font-weight-500);
 }
@@ -100,11 +119,18 @@ a {
   font-weight: var(--font-weight-600);
 }
 
+.font-weight-700 {
+  font-weight: var(--font-weight-700);
+}
 .text-primary {
   /* VEA QUE PRIMERO ESTA LA PALABRA TEXT-  */
   color: green;
 }
 
+.text-green {
+  /* VEA QUE PRIMERO ESTA LA PALABRA TEXT-  */
+  color: var(--custom-success);
+}
 .text-white {
   color: white;
 }
@@ -112,11 +138,11 @@ a {
   color: #99a0a8 !important;
 }
 .text-light-gray {
-  color: #888e94;
+  color: var(--menu-txt-activo);
 }
 
 .text-dark-gray {
-  color: #374659;
+  color: var(--frm-labeltext-color);
 }
 
 .text-center {
@@ -129,6 +155,22 @@ a {
 }
 
 /*-- COLORES --*/
+.tab-menu-button.active-button {
+  background-color: var(--tab-menu-gray) !important;
+  border-color: var(--tab-menu-gray);
+  color: var(--frm-labeltext-color);
+}
+.tab-menu-button {
+  border-color: var(--tab-menu-gray);
+  color: var(--frm-labeltext-color);
+}
+
+.tab-menu-button:hover {
+  background-color: var(--tab-menu-gray);
+  border-color: var(--tab-menu-gray);
+  color: var(--frm-labeltext-color);
+}
+
 .field-text-color {
   color: var(--frm-field-text-color);
 }
@@ -137,8 +179,11 @@ a {
   background: var(--frm-gray-header);
 }
 
+.bg-gray-boxes {
+  background: var(--light-gray-boxes);
+}
 .bg-gray {
-  background: #f5f7fa !important;
+  background: var(--frm-box-titles);
 }
 
 .bg-darken {
@@ -188,6 +233,10 @@ a {
 }
 
 /*-- UTILIDADES --*/
+.nowrap {
+  white-space: nowrap;
+}
+
 .br-20 {
   border-radius: 20px;
 }
@@ -225,6 +274,9 @@ a {
   margin-top: 56px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
 .mt-48 {
   margin-top: 48px;
 }
@@ -237,12 +289,32 @@ a {
   margin-right: 24px;
 }
 
-.mb-32 {
-  margin-bottom: 32px;
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mx-12 {
+  margin: 0 12px;
 }
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
 }
 
 .mb-40 {
@@ -251,6 +323,15 @@ a {
 
 .mb-56 {
   margin-bottom: 56px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .my-24 {
@@ -280,6 +361,26 @@ a {
 
 
 /* PADDINGS */
+.p-16 {
+  padding: 16px;
+}
+.p-20 {
+  padding: 20px;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+.p-56 {
+  padding: 56px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .px-76 {
   padding-left: 76px;
   padding-right: 76px;
@@ -322,7 +423,8 @@ a {
   background: var(--light-gray);
 }
 
-.form-label {
+.form-label, 
+.form-check-label {
   color: var(--frm-labeltext-color);
 }
 
@@ -343,6 +445,13 @@ a {
   margin-left: 20px;
 }
 /*FIN FORMULARIO PA INDEX*/
+
+
+/*FORMULARIO AF SOLICITANTE*/
+.container__box--info p {
+  color: var(--frm-box-pragraph);
+}
+/*FIN FORMULARIO AF SOLICITANTE*/
 
 /*----------------------------------------------------------------------
         3.0 HEADER & NAVEGACION
@@ -419,6 +528,218 @@ a {
         4.0 PÁGINAS
 ------------------------------------------------------------------------*/
 
+/*--Pagina de Inicio de Sesión--*/
+.card_login {
+  background-color: var(--white-backgorund);
+  border-radius: 0.8rem;
+  border: 0.13rem solid var(--gray-border);
+}
+
+.card__login-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--label-backgorund);
+  border-radius: 0.8rem 0.8rem 0 0;
+  padding: 1.3rem 1.875rem;
+  margin-bottom: 4rem;
+}
+
+.card__container--icon img {
+  width: 2.5rem;
+}
+
+.card_login-form {
+  padding: 0 1.875rem 1.875rem 1.875rem;
+}
+
+
+.card_login-formbtn {
+  margin-top: 4rem;
+}
+
+.card_login--btn {
+  width: 100%;
+}
+
+.card_login--recover {
+  text-align: center;
+  padding-top: 1.3rem;
+}
+
+.card_login--recoverbtn {
+  text-decoration: none;
+  color: var(--menu-txt-activo);
+}
+/*--Fin Pagina de Inicio de Sesión--*/
+
+
+/*-- Pagina Autenticación--*/
+
+.card__code-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--label-backgorund);
+  border-radius: 0.8rem 0.8rem 0 0;
+  padding: 1.3rem 1.875rem;
+  margin-bottom: 2rem;
+}
+
+.card_code-text p {
+  margin-bottom: 0px;
+  color: var(--frm-labeltext-color);
+}
+
+.card_login-codebtn {
+  margin-top: 2rem;
+}
+
+/*-- Fin Pagina Autenticación--*/
+
+
+/*--Pagina-PA-calculo--*/
+.result-container__box--interes {
+  margin-right: 74px;
+}
+
+.result-container__box--plazos {
+  width: 33%;
+}
+
+.card {
+  background-color: var(--white-backgorund);
+  padding: 3.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--gray-border);
+}
+
+.card__container-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card__container--icon {
+  padding-right: 1.5rem;
+}
+
+.mb-3 {
+  margin-top: 2.5rem;
+}
+
+.form-label:after {
+  content:"*";
+  color:var(--custom-danger);
+}
+
+.card__container-line1 {
+  border: 0.06rem solid var(--divider-line);
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+.card__container-label1{
+  background-color: var(--label-backgorund);
+  border-radius: 0.5rem;
+  padding: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+
+
+/* .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+} */
+
+.card__container-label2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 0px;
+}
+.card__container--box{
+  background-color: var(--label-backgorund);
+  border-radius: 0.5rem;
+  padding: 16px;
+  margin-bottom: 0.8rem;
+}
+
+.card__container---info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.fs-6 {
+  color: var(--frm-field-text-color);
+}
+
+.fs-4, .fs-1 {
+  color: var(--frm-labeltext-color);
+}
+
+.card__container-label3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--label-backgorund);
+  border-radius: 0.5rem;
+  padding: 1.3rem;
+  margin-bottom: 4rem;
+}
+
+.card__container-label4 {
+  background-color: var(--white-backgorund);
+  padding: 1.3rem;
+  border-radius: 0.75rem;
+  border: 0.13rem solid var(--gray-border);
+}
+
+.card__container-label--h2 {
+  font-size: var(--label-number-);
+  font-weight: 500;
+  color: var(--custom-success);
+}
+
+.card__container-btn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 20px;
+}
+/*--Final pagina-PA-calculo--*/
+
+
+
+/*-- Página PA-Resultado  --*/
+.card__offer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 2px var(--gray-border);
+  border-radius: 8px;
+}
+  .card__offer-row-data {
+    flex-direction: column;
+  }
+
+/* -- Fina PA-Resultado -- */
+
 /*----------------------------------------------------------------------
         5.0 ESTILOS CSS RESPONSIVE
 ------------------------------------------------------------------------*/
@@ -428,6 +749,9 @@ ESCRITORIO (XL revisamos en 1366px en adelante)
 =============================================*/
 
 @media (min-width: 1200px) {
+  .card {
+    min-width:730px;
+  }
 }
 
 /*=============================================
@@ -437,15 +761,24 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
 @media (max-width: 1199px) and (min-width: 992px) {
 }
 
+
+
 /*=============================================
 TABLET VERTICAL (MD revisamos en 768px)
 =============================================*/
-
+@media only screen and (max-width: 991px) and (min-width:768px) {
+  /* PA- Resultado */
+  .card__offer-row {
+    flex-wrap: wrap;  
+  }
+  /* Fin PA Resultados */
+}
 
 /*=============================================
 TABLET VERTICAL (revisamos en 991px)
 =============================================*/ 
 @media only screen and (max-width: 991px) {
+  /* --Menú de paginación-- */
   .nav-menu {
       max-width: 100%;
       display: flex;
@@ -502,6 +835,19 @@ TABLET VERTICAL (revisamos en 991px)
   .nav-menu__item--active .nav-menu__content {
       border-left: none;
   }
+  /* --Fin menú de paginación-- */
+
+
+  /* PA- Resultado */
+  .card__offer-row {
+    flex-wrap: wrap; 
+    gap: 16px; 
+  }
+  .card__offer-row div {
+    border-right:none !important;
+  }
+
+  /* Fin PA Resultados */
   
 }
 
@@ -526,6 +872,9 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
   }
 
   /* MARGINS */
+  .mb-sm-12 {
+    margin-bottom: 12px; !important;
+  }
   .mb-sm-20 {
     margin-bottom: 20px !important;
   }
@@ -561,10 +910,38 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
   .form-container__btn button {
     width: 100%;
   }
+
+  /*PAGINA PA CALCULO*/
+  .result-container__box--interes {
+    margin-right: 0;
+  }
+  .result-container__box--plazos {
+    width: 100%;
+  }
 }
 /*=============================================
 MOVIL VERTICAL (revisamos en 575px)
 =============================================*/
 
 @media (max-width: 575px) {
+
+  .card {
+    padding: 1.3rem;
+  }
+
+  .card__container--info1 {
+    margin-bottom: 1.3rem;
+  }
+
+  .card__container-label2 {
+    flex-wrap: wrap;
+  }
+
+  .card__container--box {
+    width: 100%;
+  }
+
+  .btn-outline-primary, .btn-primary {
+    width: 100%;
+  }
 }
