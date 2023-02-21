@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NCUS Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <!--Top bar-->
+    <nav class="custom-bg-primary top-bar">
+      <div
+        class="container-fluid d-lg-flex align-items-center justify-content-between p-0 sm-justify-content-center"
+      >
+        <div class="logo-container pl-80 px-sm-20px">
+          <div class="py-3 mx-2">
+            <a href="PA-index.html" class="text-decoration-none">
+              <span class="navbar-brand mb-0 h1 text-white">NCUS Web</span>
+              <span class="fs-6 fw-light text-white">Solicitudes en línea</span>
+            </a>
+          </div>
+        </div>
+        <div class="login-container bg-darken py-3 pr-80 px-sm-20">
+          <div class="login-menu d-flex justify-content-center">
+            <div class="user">
+              <span class="m-3"
+                ><img src="img/icon-user.svg" alt="" class="mb-0" /></span
+              ><a href="/" class="text-white text-decoration-none">MioTeam</a>
+            </div>
+            <div class="user-logout">
+              <span class="m-3"><img src="img/log-out_icon.svg" alt="" /></span
+              ><a href="/" class="text-white text-decoration-none">Salir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--FIN Top bar-->
+     <!--Main Container-->
+    <div class="container-fluid my-80 mb-sm-40">
+      <div class="row d-lg-flex justify-content-lg-center">
+        <!--Contenido formulario derecha-->
+        <div class="col-12 col-md-10 col-lg-10 col-xl-10">
+          <div class="form-container br-10 gray-border bg-white p-56 p-sm-26">
+            <!--Hero-->
+            <div
+            class="form-container__header mt-sm-26 d-md-flex d-lg-flex d-xl-flex justify-content-between align-items-center"
+          >
+            <h2
+              class="form-container_header--title mb-0 fs-24 text-dark-gray"
+            >
+              Deudas
+            </h2>
+            <!--search-->
+            <div class="search-filter d-lg-flex d-xl-flex d-md-flex justify-content-end mt-sm-26">
+              <div class="">
+                <button type="button" class="btn btn-outline-primary">Crear nueva solicitud de préstamo</button>
+              </div>
+            </div>
+            <!--FIN search-->
+            </div>
+            <div class="separator my-40"></div>
+          <!--FIN Hero-->
+
+            <!--Tabla PA-deudas-->
+            <div class="table-container table-responsive">
+              <!--Contenido tabla-->
+            <table class="table mt-lg-4">
+              <thead>
+                <tr>
+                  <th scope="col" class="nowrap">#</th>
+                  <th scope="col" class="nowrap">Solicitud</th>
+                  <th scope="col" class="nowrap">Estatus de solicitud</th>
+                  <th scope="col" class="nowrap">Tipo de préstamo</th>
+                  <th scope="col" class="nowrap">Propósito</th>
+                  <th scope="col" class="nowrap">Cantidad solicitdad</th>
+                  <th scope="col" class="nowrap">Plazos</th>
+                  <th scope="col" class="nowrap">Tasa de interés</th>
+                  <th scope="col" class="nowrap">Total del préstamo</th>
+                  <th scope="col" class="nowrap">Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>EL000032</td>
+                  <td>En Proceso</td>
+                  <td>Préstamo personal</td>
+                  <td>Arreglos</td>
+                  <td>$30,000.00</td>
+                  <td>36</td>
+                  <td>1.000</td>
+                  <td>$30,137.90</td>
+                  <td>
+                    <div class="dropdown show">
+                      <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Seleccionar
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>EL000033</td>
+                  <td>En Proceso</td>
+                  <td>Préstamo personal</td>
+                  <td>Arreglos</td>
+                  <td>$30,000.00</td>
+                  <td>36</td>
+                  <td>1.000</td>
+                  <td>$30,137.90</td>
+                  <td>
+                    <div class="dropdown show">
+                      <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Seleccionar
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+            <!--FIN Contenido tabla-->
+            </div>
+            <!--FIN Tabla PA-deudas-->
+
+            <!--Paginación-->
+            <div
+              class="pagination-container d-md-flex d-lg-flex d-xl-flex justify-content-between align-items-center mt-48"
+            >
+              <div class="number-pagination">
+                <p>1 al 2 de 2</p>
+              </div>
+              <div class="pagination">
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">2 </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Siguiente</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!--FIN Paginación-->
+          </div>
+        </div>
+      </div>
+        <!--FIN Contenido formulario derecha-->
+    </div>
+    </div>
+    <!--FIN Main Container-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
