@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NCUS Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <!--Top bar-->
+    <nav class="custom-bg-primary top-bar">
+      <div
+        class="container-fluid d-lg-flex align-items-center justify-content-between p-0 sm-justify-content-center"
+      >
+        <div class="logo-container pl-80 px-sm-20px">
+          <div class="py-3 mx-2">
+            <a href="PA-index.html" class="text-decoration-none">
+              <span class="navbar-brand mb-0 h1 text-white">NCUS Web</span>
+              <span class="fs-6 fw-light text-white">Solicitudes en línea</span>
+            </a>
+          </div>
+        </div>
+        <div class="login-container bg-darken py-3 pr-80 px-sm-20px">
+          <div class="login-menu d-flex justify-content-center">
+            <div class="user">
+              <span class="m-3"
+                ><img src="img/icon-user.svg" alt="" class="mb-0" /></span
+              ><a href="/" class="text-white text-decoration-none">MioTeam</a>
+            </div>
+            <div class="user-logout">
+              <span class="m-3"><img src="img/log-out_icon.svg" alt="" /></span
+              ><a href="/" class="text-white text-decoration-none">Salir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--FIN Top bar-->
+    <!--Main Container-->
+    <div class="container-fluid px-76 px-sm-26 my-80 mb-sm-40">
+      <div class="row">
+         <!--Navegación izquierda-->
+         <div class="col-12 col-md-12 col-lg-4 col-sm-12">
+
+          <!-- ======= NAVEGACIÓN =========== -->
+          <nav class="nav-menu">
+            <!--Página 1-->
+            <div class="nav-menu__item nav-menu__item--completed"> 
+                <a href="#">
+                    <div class="nav-menu__number">1</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="#" class="nav-menu__title">Información</a>
+                    <p class="nav-menu__description">Asegúrese de llenar todos los campos y de seguir cualquier otra instrucción especificada en el formulario. Una vez que haya completado el formulario, acepte los términos y condiciones y continúe al próximo paso donde se mostrará el cálculo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 2-->
+            <div class="nav-menu__item nav-menu__item--active"> 
+                <a href="PA-calculo.html">
+                    <div class="nav-menu__number">2</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="PA-calculo.html" class="nav-menu__title">Cálculo</a>
+                    <p class="nav-menu__description">Se calcula el monto solicitado,la tasa de interés y el plazo mensual. Con esto obtendrá la cantidad total a pagar del préstamo y lacantidad a pagar mensual.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 3-->
+            <div class="nav-menu__item"> 
+                <a href="PA-identidad.html">
+                    <div class="nav-menu__number">3</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="PA-identidad.html" class="nav-menu__title">Identidad</a>
+                    <p class="nav-menu__description">Asegúrese de llenar todos los campos y de seguir cualquier otra instrucción especificada en el formulario. Una vez que haya completado el formulario, acepte los términos y condiciones y continúe al próximo paso donde se mostrará el cálculo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 4-->
+            <div class="nav-menu__item"> 
+                <a href="PA-deudas.html">
+                    <div class="nav-menu__number">4</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="PA-deudas.html" class="nav-menu__title">Deudas</a>
+                    <p class="nav-menu__description">Seleccione todas las deudas que desee consolidar con la cantidad de préstamo solicitada. Luego continúe con el resultado de su preaprobación de préstamo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Página 5-->
+            <div class="nav-menu__item">
+                <a href="PA-resultado-preaprobado.html">
+                    <div class="nav-menu__number">5</div>
+                </a>
+                <div class="nav-menu__content">
+                    <a href="PA-resultado-preaprobado.html" class="nav-menu__title">Resultado</a>
+                    <p class="nav-menu__description">Obtendrá el resultado de su preaprobación según la información proveída. De ser preaprobado puede continuar con la aprobación final. De no ser preaprobado, puede modificar su solicitud o aceptar una contraoferta.
+                    </p>
+                </div>
+            </div>
+          </nav>
+          <!-- Termina la navegación-->
+          
+        </div>
+        <!-- FIN Columna de navegación de las paginas -->
+
+        <!--Contenido formulario derecha-->
+        <div class="col-12 col-md-12 col-lg-8 col-xl-5">
+          <div class="form-container br-10 gray-border bg-white p-56 p-sm-26">
+            <!--Hero-->
+            <div class="form-container__header">
+              <!--icono-->
+              <div
+                class="form-container__icon-box--identidad d-flex d-lg-flex d-md-flex align-items-center mb-sm-26"
+              >
+                <img src="img/calculo_icon.svg" alt="" />
+                <div class="form-container__icon-title">
+                  <p class="mb-0 text fs-16 font-weight-600 text-light-gray">
+                    Tipo de préstamo:
+                  </p>
+                  <h2
+                    class="fs-24 m-0 text-uppercase text-dark-gray font-weight-700"
+                  >
+                    PRÉSTAMO PERSONAL
+                  </h2>
+                </div>
+              </div>
+              <div class="separator my-40"></div>
+              <!--FIN icono-->
+            </div>
+            <!--FIN Hero-->
+
+            <!--Resultado cálculo PA-calculo-->
+            <div class="result-container__box">
+              <!--Caja total préstamo-->
+              <div
+                class="result-container__box--top d-lg-flex justify-content-between p-16 bg-gray-boxes br-8 mb-12"
+              >
+                <div class="result-container__box--total mb-12">
+                  <p class="mb-0 text-light-gray font-weight-600">
+                    Cantidad solicitada
+                  </p>
+                  <h3 class="mb-0 text-dark-gray font-weight-600 fs-40">
+                    $3,000.00
+                  </h3>
+                </div>
+                <div class="result-container__box--interes mb-12">
+                  <p class="mb-0 fs-16 font-weight-600 text-light-gray">
+                    Tasa de interés
+                  </p>
+                  <h3 class="mb-0 fs-24 font-weight-600 text-dark-gray">
+                    1.000%
+                  </h3>
+                </div>
+              </div>
+              <!--FIN Caja total préstamo-->
+
+              <!--Caja plazos préstamo-->
+              <div
+                class="result-container__box--middle d-md-flex d-lg-flex d-lx-flex gap-2 justify-content-between mb-12"
+              >
+                <div
+                  class="result-container__box--plazos d-md-flex d-lg-flex d-lx-flex justify-content-between align-items-end bg-gray-boxes p-16 br-8 mb-sm-12"
+                >
+                  <p class="mb-0 text-light-gray font-weight-600">
+                    Plazos mensuales
+                  </p>
+                  <h3 class="mb-0 text-dark-gray font-weight-600 fs-20">10</h3>
+                </div>
+
+                <div
+                  class="result-container__box--plazos d-md-flex d-lg-flex d-lx-flex align-items-end justify-content-between bg-gray-boxes p-16 br-8 mb-sm-12"
+                >
+                  <p class="mb-0 fs-16 font-weight-600 text-light-gray">
+                    Pago mensual
+                  </p>
+                  <h3 class="mb-0 fs-20 font-weight-600 text-dark-gray">
+                    $301
+                  </h3>
+                </div>
+
+                <div
+                  class="result-container__box--plazos d-md-flex d-lg-flex d-lx-flex align-items-end justify-content-between bg-gray-boxes p-16 br-8 mb-sm-12"
+                >
+                  <p class="mb-0 fs-16 font-weight-600 text-light-gray">
+                    Último pago
+                  </p>
+                  <h3 class="mb-0 fs-20 font-weight-600 text-dark-gray">
+                    $301.33
+                  </h3>
+                </div>
+              </div>
+              <!--FIN Caja plazos préstamo-->
+
+              <!--Caja interés préstamo-->
+              <div
+                class="result-container__box--middle mb-64 bg-gray-boxes p-16 br-8"
+              >
+                <div
+                  class="result-container__box--total-interes d-md-flex d-lg-flex d-lx-flex justify-content-between align-items-end"
+                >
+                  <p class="mb-0 text-light-gray font-weight-600">
+                    Total de interés a pagar
+                  </p>
+                  <h3 class="mb-0 text-dark-gray font-weight-600 fs-20">
+                    $13.75
+                  </h3>
+                </div>
+              </div>
+              <!--FIN Caja interés préstamo-->
+
+              <!--Caja total a pagar-->
+              <div
+                class="result-container__box--top d-lg-flex justify-content-between p-16 gray-border br-8 mb-12"
+              >
+                <div class="result-container__box--total mb-12">
+                  <p class="mb-0 text-light-gray font-weight-600">
+                    Total a pagar
+                  </p>
+                  <h3 class="mb-0 text-green font-weight-600 fs-40">
+                    $3,013.75
+                  </h3>
+                </div>
+              </div>
+              <!--FIN Caja total a pagar-->
+            </div>
+            <div class="separator my-40"></div>
+            <!--Botones-->
+            <div class="d-grid gap-2 d-md-block">
+              <button type="button" class="btn btn-outline-primary">
+                Regresar
+              </button>
+              <button class="btn btn-primary" type="button">Continuar</button>
+            </div>
+            <!--FIN Botones-->
+            <!--FIN Resultado cálculo PA-calculo-->
+          </div>
+        </div>
+        <!--FIN Contenido formulario derecha-->
+      </div>
+    </div>
+    <!--FIN Main Container-->
+  </body>
+</html>
