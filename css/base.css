@@ -847,6 +847,10 @@ TABLET VERTICAL (revisamos en 991px)
     border-right:none !important;
   }
 
+  .card__offer-row-data p {
+    padding-left: 0 !important;
+  }
+
   /* Fin PA Resultados */
   
 }
