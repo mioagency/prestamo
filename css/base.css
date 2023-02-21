@@ -215,7 +215,7 @@ a {
 }
 
 .light-border-right {
-  border-right: 2px solid #e2e5e9;
+  border-right: 2px solid #657488;
 }
 
 .separator {
@@ -235,6 +235,10 @@ a {
 /*-- UTILIDADES --*/
 .nowrap {
   white-space: nowrap;
+}
+
+.border-none {
+  border: none !important;
 }
 
 .br-20 {
@@ -738,6 +742,10 @@ a {
     flex-direction: column;
   }
 
+.offer__btn {
+  display: flex;
+  justify-content: center;
+}
 /* -- Fina PA-Resultado -- */
 
 /*----------------------------------------------------------------------
@@ -745,13 +753,13 @@ a {
 ------------------------------------------------------------------------*/
 
 /*=============================================
-ESCRITORIO (XL revisamos en 1366px en adelante)
+ESCRITORIO (XL revisamos en 1200px en adelante)
 =============================================*/
 
 @media (min-width: 1200px) {
-  .card {
+  /* .card {
     min-width:730px;
-  }
+  } */
 }
 
 /*=============================================
@@ -759,6 +767,18 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
 =============================================*/
 
 @media (max-width: 1199px) and (min-width: 992px) {
+ 
+  .card__offer-row.md-flex-wrap {
+    flex-wrap: wrap; 
+    gap: 16px; 
+  }
+  .card__offer-row div {
+    border-right:none !important;
+  }
+
+  .card__offer-row-data p {
+    padding-left: 0 !important;
+  }
 }
 
 
@@ -901,6 +921,26 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
     margin-bottom: 40px !important;
   }
 
+  .card {
+    padding: 1.3rem;
+  }
+
+  .card__container--info1 {
+    margin-bottom: 1.3rem;
+  }
+
+  .card__container-label2 {
+    flex-wrap: wrap;
+  }
+
+  .card__container--box {
+    width: 100%;
+  }
+
+  .btn-outline-primary, .btn-primary {
+    width: 100%;
+  }
+
   /*FORMULARIO PA INDEX*/
   .form-container__icon-box {
     width: 100%;
@@ -927,25 +967,12 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
 MOVIL VERTICAL (revisamos en 575px)
 =============================================*/
 
-@media (max-width: 575px) {
+@media (max-width: 414px) {
 
-  .card {
-    padding: 1.3rem;
+  .offer__btn {
+    display: block;
   }
-
-  .card__container--info1 {
-    margin-bottom: 1.3rem;
-  }
-
-  .card__container-label2 {
-    flex-wrap: wrap;
-  }
-
-  .card__container--box {
-    width: 100%;
-  }
-
-  .btn-outline-primary, .btn-primary {
-    width: 100%;
+  .offer__btn button:first-child {
+    margin-bottom: 12px;
   }
 }
