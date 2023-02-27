@@ -51,6 +51,7 @@
   --custom-danger: #f03800;
   --custom-info: #4189e8;
 
+  --frm-title-color:#374659;
   --frm-labeltext-color: #374659;
   --frm-field-text-color: #868d96;
   --frm-header-paragraph: #878e95;
@@ -237,6 +238,10 @@ a {
   white-space: nowrap;
 }
 
+.rowgap-20 {
+  row-gap: 20px;
+}
+
 .border-none {
   border: none !important;
 }
@@ -280,6 +285,10 @@ a {
 
 .mt-40 {
   margin-top: 40px;
+}
+
+.mt-32 {
+  margin-top: 32px;
 }
 .mt-48 {
   margin-top: 48px;
@@ -385,6 +394,10 @@ a {
   padding-bottom: 24px;
 }
 
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .px-76 {
   padding-left: 76px;
   padding-right: 76px;
@@ -398,11 +411,6 @@ a {
 .py-56 {
   padding-top: 56px;
   padding-bottom: 56px;
-}
-
-.py-24 {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .pl-80 {
@@ -531,6 +539,12 @@ a {
 /*----------------------------------------------------------------------
         4.0 PÁGINAS
 ------------------------------------------------------------------------*/
+
+/* --Página opciones ingresar-- */
+.form-container__icon-title h2 {
+  color:var(--frm-title-color);
+}
+/* --Fin Página opciones ingresar -- */
 
 /*--Pagina de Inicio de Sesión--*/
 .card_login {
@@ -751,15 +765,24 @@ a {
 /*----------------------------------------------------------------------
         5.0 ESTILOS CSS RESPONSIVE
 ------------------------------------------------------------------------*/
+/*=============================================
+ESCRITORIO (XXL revisamos en 1400px en adelante)
+=============================================*/
+
+@media (min-width: 1400px) {
+  #opciones-ingresar.container-fluid {
+    max-width: 1320px !important;
+  }
+}
 
 /*=============================================
 ESCRITORIO (XL revisamos en 1200px en adelante)
 =============================================*/
 
 @media (min-width: 1200px) {
-  /* .card {
-    min-width:730px;
-  } */
+  #opciones-ingresar.container-fluid {
+    max-width: 1140px;
+  }
 }
 
 /*=============================================
@@ -792,6 +815,13 @@ TABLET VERTICAL (MD revisamos en 768px)
     flex-wrap: wrap;  
   }
   /* Fin PA Resultados */
+
+  /* Ingresar como prospecto */
+  .form-container__login--autenticator{
+    height:auto;
+  }
+    /* Fin Ingresar como prospecto */
+
 }
 
 /*=============================================
@@ -964,7 +994,7 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
   }
 }
 /*=============================================
-MOVIL VERTICAL (revisamos en 414px)
+MOVIL VERTICAL (revisamos en 575px)
 =============================================*/
 
 @media (max-width: 414px) {
