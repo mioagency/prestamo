@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
+  <g id="printer-fill" transform="translate(0 -1)">
+    <path id="Path_3233" data-name="Path 3233" d="M5,1A2,2,0,0,0,3,3V4H13V3a2,2,0,0,0-2-2Zm6,8H5a1,1,0,0,0-1,1v3a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V10A1,1,0,0,0,11,9Z" fill="#fff"/>
+    <path id="Path_3234" data-name="Path 3234" d="M0,7A2,2,0,0,1,2,5H14a2,2,0,0,1,2,2v3a2,2,0,0,1-2,2H13V10a2,2,0,0,0-2-2H5a2,2,0,0,0-2,2v2H2a2,2,0,0,1-2-2ZM2.5,8A.5.5,0,1,0,2,7.5.5.5,0,0,0,2.5,8Z" fill="#fff"/>
+  </g>
+</svg>
