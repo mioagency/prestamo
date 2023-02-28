@@ -242,6 +242,10 @@ a {
   row-gap: 20px;
 }
 
+.colgap-8 {
+  column-gap: 8px;
+}
+
 .border-none {
   border: none !important;
 }
@@ -385,6 +389,9 @@ a {
   padding: 24px;
 }
 
+.p-32 {
+  padding: 32px;
+}
 .p-56 {
   padding: 56px;
 }
@@ -761,6 +768,21 @@ a {
   justify-content: center;
 }
 /* -- Fina PA-Resultado -- */
+
+
+/* --Página de Transferencia de solicitud -- */
+svg g#printer-fill path {
+  fill:var(--bs-btn-color);
+}
+
+button:hover svg g#printer-fill path,
+button:hover svg #x-circle-fill {
+  fill:white;
+}
+
+
+/* --Fin de Página de Transferencia de solicitud -- */
+
 
 /*----------------------------------------------------------------------
         5.0 ESTILOS CSS RESPONSIVE
